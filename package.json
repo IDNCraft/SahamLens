@@ -1,7 +1,28 @@
 {
   "name": "sahamlens",
-  "private": true,
   "version": "0.1.1",
+  "description": "Browser-based stock snapshot parser and fundamental analysis dashboard",
+  "author": {
+    "name": "IDNCraft",
+    "url": "https://github.com/IDNCraft"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IDNCraft/SahamLens.git"
+  },
+  "keywords": [
+    "stock-analysis",
+    "fundamental-analysis",
+    "stockbit",
+    "finance",
+    "investment-tools",
+    "browser-app",
+    "parser",
+    "react",
+    "typescript",
+    "vite"
+  ],
+  "license": "MIT",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -17,7 +38,10 @@
     "release:major": "release-it major",
     "release:patch": "release-it patch",
     "release:beta": "release-it --preRelease=beta --ci",
-    "release:alpha": "release-it --preRelease=alpha"
+    "release:alpha": "release-it --preRelease=alpha",
+    "typecheck": "tsc --noEmit",
+    "check:fast": "bun run format:check && bun run lint",
+    "check:full": "bun run typecheck && bun run build"
   },
   "dependencies": {
     "lucide-react": "^1.28.0",
@@ -45,5 +69,9 @@
     "release-it": "^19.2.4",
     "typescript": "~6.0.2",
     "vite": "^8.2.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "bun": ">=1.0.0"
   }
 }
