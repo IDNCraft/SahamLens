@@ -116,4 +116,4 @@ SahamLens adalah alat bantu membaca data, bukan nasihat investasi. Validasi sumb
 
 ## Lisensi
 
-Lisensi open-source belum ditentukan. Tambahkan file `LICENSE` sebelum rilis publik resmi.
+SahamLens dirilis di bawah [MIT License](LICENSE).
