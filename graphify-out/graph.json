@@ -564,686 +564,6 @@
       "id": "eslint_config_unicornrecommendedrules"
     },
     {
-      "label": "package.json",
-      "file_type": "code",
-      "source_file": "package.json",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 4,
-      "norm_label": "package.json",
-      "id": "package"
-    },
-    {
-      "label": "name",
-      "file_type": "code",
-      "source_file": "package.json",
-      "source_location": "L2",
-      "_origin": "ast",
-      "community": 4,
-      "norm_label": "name",
-      "id": "package_name"
-    },
-    {
-      "label": "private",
-      "file_type": "code",
-      "source_file": "package.json",
-      "source_location": "L3",
-      "_origin": "ast",
-      "community": 4,
-      "norm_label": "private",
-      "id": "package_private"
-    },
-    {
-      "label": "version",
-      "file_type": "code",
-      "source_file": "package.json",
-      "source_location": "L4",
-      "_origin": "ast",
-      "community": 4,
-      "norm_label": "version",
-      "id": "package_version"
-    },
-    {
-      "label": "type",
-      "file_type": "code",
-      "source_file": "package.json",
-      "source_location": "L5",
-      "_origin": "ast",
-      "community": 4,
-      "norm_label": "type",
-      "id": "package_type"
-    },
-    {
-      "label": "scripts",
-      "file_type": "code",
-      "source_file": "package.json",
-      "source_location": "L6",
-      "_origin": "ast",
-      "community": 4,
-      "norm_label": "scripts",
-      "id": "package_scripts"
-    },
-    {
-      "label": "dev",
-      "file_type": "code",
-      "source_file": "package.json",
-      "source_location": "L7",
-      "_origin": "ast",
-      "community": 4,
-      "norm_label": "dev",
-      "id": "package_scripts_dev"
-    },
-    {
-      "label": "build",
-      "file_type": "code",
-      "source_file": "package.json",
-      "source_location": "L8",
-      "_origin": "ast",
-      "community": 4,
-      "norm_label": "build",
-      "id": "package_scripts_build"
-    },
-    {
-      "label": "lint",
-      "file_type": "code",
-      "source_file": "package.json",
-      "source_location": "L9",
-      "_origin": "ast",
-      "community": 4,
-      "norm_label": "lint",
-      "id": "package_scripts_lint"
-    },
-    {
-      "label": "lint:fix",
-      "file_type": "code",
-      "source_file": "package.json",
-      "source_location": "L10",
-      "_origin": "ast",
-      "community": 4,
-      "norm_label": "lint:fix",
-      "id": "package_scripts_lint_fix"
-    },
-    {
-      "label": "lint:oxlint",
-      "file_type": "code",
-      "source_file": "package.json",
-      "source_location": "L11",
-      "_origin": "ast",
-      "community": 4,
-      "norm_label": "lint:oxlint",
-      "id": "package_scripts_lint_oxlint"
-    },
-    {
-      "label": "format",
-      "file_type": "code",
-      "source_file": "package.json",
-      "source_location": "L12",
-      "_origin": "ast",
-      "community": 4,
-      "norm_label": "format",
-      "id": "package_scripts_format"
-    },
-    {
-      "label": "format:check",
-      "file_type": "code",
-      "source_file": "package.json",
-      "source_location": "L13",
-      "_origin": "ast",
-      "community": 4,
-      "norm_label": "format:check",
-      "id": "package_scripts_format_check"
-    },
-    {
-      "label": "preview",
-      "file_type": "code",
-      "source_file": "package.json",
-      "source_location": "L14",
-      "_origin": "ast",
-      "community": 4,
-      "norm_label": "preview",
-      "id": "package_scripts_preview"
-    },
-    {
-      "label": "release",
-      "file_type": "code",
-      "source_file": "package.json",
-      "source_location": "L15",
-      "_origin": "ast",
-      "community": 4,
-      "norm_label": "release",
-      "id": "package_scripts_release"
-    },
-    {
-      "label": "release:minor",
-      "file_type": "code",
-      "source_file": "package.json",
-      "source_location": "L16",
-      "_origin": "ast",
-      "community": 4,
-      "norm_label": "release:minor",
-      "id": "package_scripts_release_minor"
-    },
-    {
-      "label": "release:major",
-      "file_type": "code",
-      "source_file": "package.json",
-      "source_location": "L17",
-      "_origin": "ast",
-      "community": 4,
-      "norm_label": "release:major",
-      "id": "package_scripts_release_major"
-    },
-    {
-      "label": "release:patch",
-      "file_type": "code",
-      "source_file": "package.json",
-      "source_location": "L18",
-      "_origin": "ast",
-      "community": 4,
-      "norm_label": "release:patch",
-      "id": "package_scripts_release_patch"
-    },
-    {
-      "label": "release:beta",
-      "file_type": "code",
-      "source_file": "package.json",
-      "source_location": "L19",
-      "_origin": "ast",
-      "community": 4,
-      "norm_label": "release:beta",
-      "id": "package_scripts_release_beta"
-    },
-    {
-      "label": "release:alpha",
-      "file_type": "code",
-      "source_file": "package.json",
-      "source_location": "L20",
-      "_origin": "ast",
-      "community": 4,
-      "norm_label": "release:alpha",
-      "id": "package_scripts_release_alpha"
-    },
-    {
-      "label": "dependencies",
-      "file_type": "code",
-      "source_file": "package.json",
-      "source_location": "L22",
-      "_origin": "ast",
-      "community": 4,
-      "norm_label": "dependencies",
-      "id": "package_dependencies"
-    },
-    {
-      "label": "lucide-react",
-      "file_type": "code",
-      "source_file": "package.json",
-      "source_location": "L23",
-      "_origin": "ast",
-      "community": 4,
-      "norm_label": "lucide-react",
-      "id": "package_dependencies_lucide_react"
-    },
-    {
-      "label": "lucide-react",
-      "file_type": "concept",
-      "source_file": "package.json",
-      "source_location": "L23",
-      "_origin": "ast",
-      "community": 4,
-      "norm_label": "lucide-react",
-      "id": "lucide_react"
-    },
-    {
-      "label": "react",
-      "file_type": "code",
-      "source_file": "package.json",
-      "source_location": "L24",
-      "_origin": "ast",
-      "community": 4,
-      "norm_label": "react",
-      "id": "package_dependencies_react"
-    },
-    {
-      "label": "react",
-      "file_type": "concept",
-      "source_file": "package.json",
-      "source_location": "L24",
-      "_origin": "ast",
-      "community": 4,
-      "norm_label": "react",
-      "id": "react"
-    },
-    {
-      "label": "react-dom",
-      "file_type": "code",
-      "source_file": "package.json",
-      "source_location": "L25",
-      "_origin": "ast",
-      "community": 4,
-      "norm_label": "react-dom",
-      "id": "package_dependencies_react_dom"
-    },
-    {
-      "label": "react-dom",
-      "file_type": "concept",
-      "source_file": "package.json",
-      "source_location": "L25",
-      "_origin": "ast",
-      "community": 4,
-      "norm_label": "react-dom",
-      "id": "react_dom"
-    },
-    {
-      "label": "devDependencies",
-      "file_type": "code",
-      "source_file": "package.json",
-      "source_location": "L27",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "devdependencies",
-      "id": "package_devdependencies"
-    },
-    {
-      "label": "@ianvs/prettier-plugin-sort-imports",
-      "file_type": "code",
-      "source_file": "package.json",
-      "source_location": "L28",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "@ianvs/prettier-plugin-sort-imports",
-      "id": "package_devdependencies_ianvs_prettier_plugin_sort_imports"
-    },
-    {
-      "label": "@ianvs/prettier-plugin-sort-imports",
-      "file_type": "concept",
-      "source_file": "package.json",
-      "source_location": "L28",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "@ianvs/prettier-plugin-sort-imports",
-      "id": "ianvs_prettier_plugin_sort_imports"
-    },
-    {
-      "label": "@release-it/conventional-changelog",
-      "file_type": "code",
-      "source_file": "package.json",
-      "source_location": "L29",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "@release-it/conventional-changelog",
-      "id": "package_devdependencies_release_it_conventional_changelog"
-    },
-    {
-      "label": "@release-it/conventional-changelog",
-      "file_type": "concept",
-      "source_file": "package.json",
-      "source_location": "L29",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "@release-it/conventional-changelog",
-      "id": "release_it_conventional_changelog"
-    },
-    {
-      "label": "@types/node",
-      "file_type": "code",
-      "source_file": "package.json",
-      "source_location": "L30",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "@types/node",
-      "id": "package_devdependencies_types_node"
-    },
-    {
-      "label": "@types/node",
-      "file_type": "concept",
-      "source_file": "package.json",
-      "source_location": "L30",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "@types/node",
-      "id": "types_node"
-    },
-    {
-      "label": "@types/react",
-      "file_type": "code",
-      "source_file": "package.json",
-      "source_location": "L31",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "@types/react",
-      "id": "package_devdependencies_types_react"
-    },
-    {
-      "label": "@types/react",
-      "file_type": "concept",
-      "source_file": "package.json",
-      "source_location": "L31",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "@types/react",
-      "id": "types_react"
-    },
-    {
-      "label": "@types/react-dom",
-      "file_type": "code",
-      "source_file": "package.json",
-      "source_location": "L32",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "@types/react-dom",
-      "id": "package_devdependencies_types_react_dom"
-    },
-    {
-      "label": "@types/react-dom",
-      "file_type": "concept",
-      "source_file": "package.json",
-      "source_location": "L32",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "@types/react-dom",
-      "id": "types_react_dom"
-    },
-    {
-      "label": "@typescript-eslint/eslint-plugin",
-      "file_type": "code",
-      "source_file": "package.json",
-      "source_location": "L33",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "@typescript-eslint/eslint-plugin",
-      "id": "package_devdependencies_typescript_eslint_eslint_plugin"
-    },
-    {
-      "label": "@typescript-eslint/eslint-plugin",
-      "file_type": "concept",
-      "source_file": "package.json",
-      "source_location": "L33",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "@typescript-eslint/eslint-plugin",
-      "id": "typescript_eslint_eslint_plugin"
-    },
-    {
-      "label": "@typescript-eslint/parser",
-      "file_type": "code",
-      "source_file": "package.json",
-      "source_location": "L34",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "@typescript-eslint/parser",
-      "id": "package_devdependencies_typescript_eslint_parser"
-    },
-    {
-      "label": "@typescript-eslint/parser",
-      "file_type": "concept",
-      "source_file": "package.json",
-      "source_location": "L34",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "@typescript-eslint/parser",
-      "id": "typescript_eslint_parser"
-    },
-    {
-      "label": "@vitejs/plugin-react",
-      "file_type": "code",
-      "source_file": "package.json",
-      "source_location": "L35",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "@vitejs/plugin-react",
-      "id": "package_devdependencies_vitejs_plugin_react"
-    },
-    {
-      "label": "@vitejs/plugin-react",
-      "file_type": "concept",
-      "source_file": "package.json",
-      "source_location": "L35",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "@vitejs/plugin-react",
-      "id": "vitejs_plugin_react"
-    },
-    {
-      "label": "eslint",
-      "file_type": "code",
-      "source_file": "package.json",
-      "source_location": "L36",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "eslint",
-      "id": "package_devdependencies_eslint"
-    },
-    {
-      "label": "eslint",
-      "file_type": "concept",
-      "source_file": "package.json",
-      "source_location": "L36",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "eslint",
-      "id": "eslint"
-    },
-    {
-      "label": "eslint-config-prettier",
-      "file_type": "code",
-      "source_file": "package.json",
-      "source_location": "L37",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "eslint-config-prettier",
-      "id": "package_devdependencies_eslint_config_prettier"
-    },
-    {
-      "label": "eslint-config-prettier",
-      "file_type": "concept",
-      "source_file": "package.json",
-      "source_location": "L37",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "eslint-config-prettier",
-      "id": "eslint_config_prettier"
-    },
-    {
-      "label": "eslint-plugin-prettier",
-      "file_type": "code",
-      "source_file": "package.json",
-      "source_location": "L38",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "eslint-plugin-prettier",
-      "id": "package_devdependencies_eslint_plugin_prettier"
-    },
-    {
-      "label": "eslint-plugin-prettier",
-      "file_type": "concept",
-      "source_file": "package.json",
-      "source_location": "L38",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "eslint-plugin-prettier",
-      "id": "eslint_plugin_prettier"
-    },
-    {
-      "label": "eslint-plugin-promise",
-      "file_type": "code",
-      "source_file": "package.json",
-      "source_location": "L39",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "eslint-plugin-promise",
-      "id": "package_devdependencies_eslint_plugin_promise"
-    },
-    {
-      "label": "eslint-plugin-promise",
-      "file_type": "concept",
-      "source_file": "package.json",
-      "source_location": "L39",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "eslint-plugin-promise",
-      "id": "eslint_plugin_promise"
-    },
-    {
-      "label": "eslint-plugin-react-hooks",
-      "file_type": "code",
-      "source_file": "package.json",
-      "source_location": "L40",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "eslint-plugin-react-hooks",
-      "id": "package_devdependencies_eslint_plugin_react_hooks"
-    },
-    {
-      "label": "eslint-plugin-react-hooks",
-      "file_type": "concept",
-      "source_file": "package.json",
-      "source_location": "L40",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "eslint-plugin-react-hooks",
-      "id": "eslint_plugin_react_hooks"
-    },
-    {
-      "label": "eslint-plugin-security",
-      "file_type": "code",
-      "source_file": "package.json",
-      "source_location": "L41",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "eslint-plugin-security",
-      "id": "package_devdependencies_eslint_plugin_security"
-    },
-    {
-      "label": "eslint-plugin-security",
-      "file_type": "concept",
-      "source_file": "package.json",
-      "source_location": "L41",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "eslint-plugin-security",
-      "id": "eslint_plugin_security"
-    },
-    {
-      "label": "eslint-plugin-unicorn",
-      "file_type": "code",
-      "source_file": "package.json",
-      "source_location": "L42",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "eslint-plugin-unicorn",
-      "id": "package_devdependencies_eslint_plugin_unicorn"
-    },
-    {
-      "label": "eslint-plugin-unicorn",
-      "file_type": "concept",
-      "source_file": "package.json",
-      "source_location": "L42",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "eslint-plugin-unicorn",
-      "id": "eslint_plugin_unicorn"
-    },
-    {
-      "label": "oxlint",
-      "file_type": "code",
-      "source_file": "package.json",
-      "source_location": "L43",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "oxlint",
-      "id": "package_devdependencies_oxlint"
-    },
-    {
-      "label": "oxlint",
-      "file_type": "concept",
-      "source_file": "package.json",
-      "source_location": "L43",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "oxlint",
-      "id": "oxlint"
-    },
-    {
-      "label": "prettier",
-      "file_type": "code",
-      "source_file": "package.json",
-      "source_location": "L44",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "prettier",
-      "id": "package_devdependencies_prettier"
-    },
-    {
-      "label": "prettier",
-      "file_type": "concept",
-      "source_file": "package.json",
-      "source_location": "L44",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "prettier",
-      "id": "prettier"
-    },
-    {
-      "label": "release-it",
-      "file_type": "code",
-      "source_file": "package.json",
-      "source_location": "L45",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "release-it",
-      "id": "package_devdependencies_release_it"
-    },
-    {
-      "label": "release-it",
-      "file_type": "concept",
-      "source_file": "package.json",
-      "source_location": "L45",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "release-it",
-      "id": "release_it"
-    },
-    {
-      "label": "typescript",
-      "file_type": "code",
-      "source_file": "package.json",
-      "source_location": "L46",
-      "_origin": "ast",
-      "community": 9,
-      "norm_label": "typescript",
-      "id": "package_devdependencies_typescript"
-    },
-    {
-      "label": "typescript",
-      "file_type": "concept",
-      "source_file": "package.json",
-      "source_location": "L46",
-      "_origin": "ast",
-      "community": 9,
-      "norm_label": "typescript",
-      "id": "typescript"
-    },
-    {
-      "label": "vite",
-      "file_type": "code",
-      "source_file": "package.json",
-      "source_location": "L47",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "vite",
-      "id": "package_devdependencies_vite"
-    },
-    {
-      "label": "vite",
-      "file_type": "concept",
-      "source_file": "package.json",
-      "source_location": "L47",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "vite",
-      "id": "vite"
-    },
-    {
       "label": "AnalysisPanel.tsx",
       "file_type": "code",
       "source_file": "src/components/analysis/AnalysisPanel.tsx",
@@ -3060,14 +2380,694 @@
       "id": "vite_config"
     },
     {
+      "label": "package.json",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "package.json",
+      "id": "package"
+    },
+    {
+      "label": "name",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L2",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "name",
+      "id": "package_name"
+    },
+    {
+      "label": "private",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L3",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "private",
+      "id": "package_private"
+    },
+    {
+      "label": "version",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L4",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "version",
+      "id": "package_version"
+    },
+    {
+      "label": "type",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L5",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "type",
+      "id": "package_type"
+    },
+    {
+      "label": "scripts",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L6",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "scripts",
+      "id": "package_scripts"
+    },
+    {
+      "label": "dev",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L7",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "dev",
+      "id": "package_scripts_dev"
+    },
+    {
+      "label": "build",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L8",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "build",
+      "id": "package_scripts_build"
+    },
+    {
+      "label": "lint",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L9",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "lint",
+      "id": "package_scripts_lint"
+    },
+    {
+      "label": "lint:fix",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L10",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "lint:fix",
+      "id": "package_scripts_lint_fix"
+    },
+    {
+      "label": "lint:oxlint",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L11",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "lint:oxlint",
+      "id": "package_scripts_lint_oxlint"
+    },
+    {
+      "label": "format",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L12",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "format",
+      "id": "package_scripts_format"
+    },
+    {
+      "label": "format:check",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L13",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "format:check",
+      "id": "package_scripts_format_check"
+    },
+    {
+      "label": "preview",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L14",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "preview",
+      "id": "package_scripts_preview"
+    },
+    {
+      "label": "release",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L15",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "release",
+      "id": "package_scripts_release"
+    },
+    {
+      "label": "release:minor",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L16",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "release:minor",
+      "id": "package_scripts_release_minor"
+    },
+    {
+      "label": "release:major",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L17",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "release:major",
+      "id": "package_scripts_release_major"
+    },
+    {
+      "label": "release:patch",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L18",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "release:patch",
+      "id": "package_scripts_release_patch"
+    },
+    {
+      "label": "release:beta",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L19",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "release:beta",
+      "id": "package_scripts_release_beta"
+    },
+    {
+      "label": "release:alpha",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L20",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "release:alpha",
+      "id": "package_scripts_release_alpha"
+    },
+    {
+      "label": "dependencies",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L22",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "dependencies",
+      "id": "package_dependencies"
+    },
+    {
+      "label": "lucide-react",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L23",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "lucide-react",
+      "id": "package_dependencies_lucide_react"
+    },
+    {
+      "label": "lucide-react",
+      "file_type": "concept",
+      "source_file": "package.json",
+      "source_location": "L23",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "lucide-react",
+      "id": "lucide_react"
+    },
+    {
+      "label": "react",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L24",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "react",
+      "id": "package_dependencies_react"
+    },
+    {
+      "label": "react",
+      "file_type": "concept",
+      "source_file": "package.json",
+      "source_location": "L24",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "react",
+      "id": "react"
+    },
+    {
+      "label": "react-dom",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L25",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "react-dom",
+      "id": "package_dependencies_react_dom"
+    },
+    {
+      "label": "react-dom",
+      "file_type": "concept",
+      "source_file": "package.json",
+      "source_location": "L25",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "react-dom",
+      "id": "react_dom"
+    },
+    {
+      "label": "devDependencies",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L27",
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": "devdependencies",
+      "id": "package_devdependencies"
+    },
+    {
+      "label": "@ianvs/prettier-plugin-sort-imports",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L28",
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": "@ianvs/prettier-plugin-sort-imports",
+      "id": "package_devdependencies_ianvs_prettier_plugin_sort_imports"
+    },
+    {
+      "label": "@ianvs/prettier-plugin-sort-imports",
+      "file_type": "concept",
+      "source_file": "package.json",
+      "source_location": "L28",
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": "@ianvs/prettier-plugin-sort-imports",
+      "id": "ianvs_prettier_plugin_sort_imports"
+    },
+    {
+      "label": "@release-it/conventional-changelog",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L29",
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": "@release-it/conventional-changelog",
+      "id": "package_devdependencies_release_it_conventional_changelog"
+    },
+    {
+      "label": "@release-it/conventional-changelog",
+      "file_type": "concept",
+      "source_file": "package.json",
+      "source_location": "L29",
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": "@release-it/conventional-changelog",
+      "id": "release_it_conventional_changelog"
+    },
+    {
+      "label": "@types/node",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L30",
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": "@types/node",
+      "id": "package_devdependencies_types_node"
+    },
+    {
+      "label": "@types/node",
+      "file_type": "concept",
+      "source_file": "package.json",
+      "source_location": "L30",
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": "@types/node",
+      "id": "types_node"
+    },
+    {
+      "label": "@types/react",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L31",
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": "@types/react",
+      "id": "package_devdependencies_types_react"
+    },
+    {
+      "label": "@types/react",
+      "file_type": "concept",
+      "source_file": "package.json",
+      "source_location": "L31",
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": "@types/react",
+      "id": "types_react"
+    },
+    {
+      "label": "@types/react-dom",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L32",
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": "@types/react-dom",
+      "id": "package_devdependencies_types_react_dom"
+    },
+    {
+      "label": "@types/react-dom",
+      "file_type": "concept",
+      "source_file": "package.json",
+      "source_location": "L32",
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": "@types/react-dom",
+      "id": "types_react_dom"
+    },
+    {
+      "label": "@typescript-eslint/eslint-plugin",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L33",
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": "@typescript-eslint/eslint-plugin",
+      "id": "package_devdependencies_typescript_eslint_eslint_plugin"
+    },
+    {
+      "label": "@typescript-eslint/eslint-plugin",
+      "file_type": "concept",
+      "source_file": "package.json",
+      "source_location": "L33",
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": "@typescript-eslint/eslint-plugin",
+      "id": "typescript_eslint_eslint_plugin"
+    },
+    {
+      "label": "@typescript-eslint/parser",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L34",
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": "@typescript-eslint/parser",
+      "id": "package_devdependencies_typescript_eslint_parser"
+    },
+    {
+      "label": "@typescript-eslint/parser",
+      "file_type": "concept",
+      "source_file": "package.json",
+      "source_location": "L34",
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": "@typescript-eslint/parser",
+      "id": "typescript_eslint_parser"
+    },
+    {
+      "label": "@vitejs/plugin-react",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L35",
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": "@vitejs/plugin-react",
+      "id": "package_devdependencies_vitejs_plugin_react"
+    },
+    {
+      "label": "@vitejs/plugin-react",
+      "file_type": "concept",
+      "source_file": "package.json",
+      "source_location": "L35",
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": "@vitejs/plugin-react",
+      "id": "vitejs_plugin_react"
+    },
+    {
+      "label": "eslint",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L36",
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": "eslint",
+      "id": "package_devdependencies_eslint"
+    },
+    {
+      "label": "eslint",
+      "file_type": "concept",
+      "source_file": "package.json",
+      "source_location": "L36",
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": "eslint",
+      "id": "eslint"
+    },
+    {
+      "label": "eslint-config-prettier",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L37",
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": "eslint-config-prettier",
+      "id": "package_devdependencies_eslint_config_prettier"
+    },
+    {
+      "label": "eslint-config-prettier",
+      "file_type": "concept",
+      "source_file": "package.json",
+      "source_location": "L37",
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": "eslint-config-prettier",
+      "id": "eslint_config_prettier"
+    },
+    {
+      "label": "eslint-plugin-prettier",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L38",
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": "eslint-plugin-prettier",
+      "id": "package_devdependencies_eslint_plugin_prettier"
+    },
+    {
+      "label": "eslint-plugin-prettier",
+      "file_type": "concept",
+      "source_file": "package.json",
+      "source_location": "L38",
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": "eslint-plugin-prettier",
+      "id": "eslint_plugin_prettier"
+    },
+    {
+      "label": "eslint-plugin-promise",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L39",
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": "eslint-plugin-promise",
+      "id": "package_devdependencies_eslint_plugin_promise"
+    },
+    {
+      "label": "eslint-plugin-promise",
+      "file_type": "concept",
+      "source_file": "package.json",
+      "source_location": "L39",
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": "eslint-plugin-promise",
+      "id": "eslint_plugin_promise"
+    },
+    {
+      "label": "eslint-plugin-react-hooks",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L40",
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": "eslint-plugin-react-hooks",
+      "id": "package_devdependencies_eslint_plugin_react_hooks"
+    },
+    {
+      "label": "eslint-plugin-react-hooks",
+      "file_type": "concept",
+      "source_file": "package.json",
+      "source_location": "L40",
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": "eslint-plugin-react-hooks",
+      "id": "eslint_plugin_react_hooks"
+    },
+    {
+      "label": "eslint-plugin-security",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L41",
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": "eslint-plugin-security",
+      "id": "package_devdependencies_eslint_plugin_security"
+    },
+    {
+      "label": "eslint-plugin-security",
+      "file_type": "concept",
+      "source_file": "package.json",
+      "source_location": "L41",
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": "eslint-plugin-security",
+      "id": "eslint_plugin_security"
+    },
+    {
+      "label": "eslint-plugin-unicorn",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L42",
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": "eslint-plugin-unicorn",
+      "id": "package_devdependencies_eslint_plugin_unicorn"
+    },
+    {
+      "label": "eslint-plugin-unicorn",
+      "file_type": "concept",
+      "source_file": "package.json",
+      "source_location": "L42",
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": "eslint-plugin-unicorn",
+      "id": "eslint_plugin_unicorn"
+    },
+    {
+      "label": "oxlint",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L43",
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": "oxlint",
+      "id": "package_devdependencies_oxlint"
+    },
+    {
+      "label": "oxlint",
+      "file_type": "concept",
+      "source_file": "package.json",
+      "source_location": "L43",
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": "oxlint",
+      "id": "oxlint"
+    },
+    {
+      "label": "prettier",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L44",
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": "prettier",
+      "id": "package_devdependencies_prettier"
+    },
+    {
+      "label": "prettier",
+      "file_type": "concept",
+      "source_file": "package.json",
+      "source_location": "L44",
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": "prettier",
+      "id": "prettier"
+    },
+    {
+      "label": "release-it",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L45",
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": "release-it",
+      "id": "package_devdependencies_release_it"
+    },
+    {
+      "label": "release-it",
+      "file_type": "concept",
+      "source_file": "package.json",
+      "source_location": "L45",
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": "release-it",
+      "id": "release_it"
+    },
+    {
+      "label": "typescript",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L46",
+      "_origin": "ast",
+      "community": 9,
+      "norm_label": "typescript",
+      "id": "package_devdependencies_typescript"
+    },
+    {
+      "label": "typescript",
+      "file_type": "concept",
+      "source_file": "package.json",
+      "source_location": "L46",
+      "_origin": "ast",
+      "community": 9,
+      "norm_label": "typescript",
+      "id": "typescript"
+    },
+    {
+      "label": "vite",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L47",
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": "vite",
+      "id": "package_devdependencies_vite"
+    },
+    {
+      "label": "vite",
+      "file_type": "concept",
+      "source_file": "package.json",
+      "source_location": "L47",
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": "vite",
+      "id": "vite"
+    },
+    {
       "label": "App.tsx",
       "file_type": "code",
       "source_file": "src/App.tsx",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "src_app",
       "community": 0,
-      "norm_label": "app.tsx"
+      "norm_label": "app.tsx",
+      "id": "src_app"
     },
     {
       "label": "countMetrics()",
@@ -3076,9 +3076,9 @@
       "source_location": "L48",
       "_callable": true,
       "_origin": "ast",
-      "id": "src_app_countmetrics",
       "community": 0,
-      "norm_label": "countmetrics()"
+      "norm_label": "countmetrics()",
+      "id": "src_app_countmetrics"
     },
     {
       "label": "countTables()",
@@ -3087,9 +3087,9 @@
       "source_location": "L51",
       "_callable": true,
       "_origin": "ast",
-      "id": "src_app_counttables",
       "community": 0,
-      "norm_label": "counttables()"
+      "norm_label": "counttables()",
+      "id": "src_app_counttables"
     },
     {
       "label": "App()",
@@ -3098,9 +3098,9 @@
       "source_location": "L54",
       "_callable": true,
       "_origin": "ast",
-      "id": "src_app_app",
       "community": 0,
-      "norm_label": "app()"
+      "norm_label": "app()",
+      "id": "src_app_app"
     }
   ],
   "links": [
@@ -3181,9 +3181,9 @@
       "source_location": "L17",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "ref_react",
-      "confidence_score": 1.0
+      "target": "ref_react"
     },
     {
       "relation": "imports_from",
@@ -3736,778 +3736,6 @@
       "target": "eslint_config_unicornrecommendedrules"
     },
     {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L22",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "package",
-      "target": "package_dependencies"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L27",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "package",
-      "target": "package_devdependencies"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L2",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "package",
-      "target": "package_name"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L3",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "package",
-      "target": "package_private"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L6",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "package",
-      "target": "package_scripts"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L5",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "package",
-      "target": "package_type"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L4",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "package",
-      "target": "package_version"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/App.tsx",
-      "source_location": "L44",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "src_app",
-      "target": "package",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L8",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "package_scripts",
-      "target": "package_scripts_build"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L7",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "package_scripts",
-      "target": "package_scripts_dev"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L12",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "package_scripts",
-      "target": "package_scripts_format"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L13",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "package_scripts",
-      "target": "package_scripts_format_check"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L9",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "package_scripts",
-      "target": "package_scripts_lint"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L10",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "package_scripts",
-      "target": "package_scripts_lint_fix"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L11",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "package_scripts",
-      "target": "package_scripts_lint_oxlint"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L14",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "package_scripts",
-      "target": "package_scripts_preview"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L15",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "package_scripts",
-      "target": "package_scripts_release"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L20",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "package_scripts",
-      "target": "package_scripts_release_alpha"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L19",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "package_scripts",
-      "target": "package_scripts_release_beta"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L17",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "package_scripts",
-      "target": "package_scripts_release_major"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L16",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "package_scripts",
-      "target": "package_scripts_release_minor"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L18",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "package_scripts",
-      "target": "package_scripts_release_patch"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L23",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "package_dependencies",
-      "target": "package_dependencies_lucide_react"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L24",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "package_dependencies",
-      "target": "package_dependencies_react"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L25",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "package_dependencies",
-      "target": "package_dependencies_react_dom"
-    },
-    {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L23",
-      "weight": 1.0,
-      "context": "import",
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "package_dependencies_lucide_react",
-      "target": "lucide_react"
-    },
-    {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L24",
-      "weight": 1.0,
-      "context": "import",
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "package_dependencies_react",
-      "target": "react"
-    },
-    {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L25",
-      "weight": 1.0,
-      "context": "import",
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "package_dependencies_react_dom",
-      "target": "react_dom"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L36",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "package_devdependencies",
-      "target": "package_devdependencies_eslint"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L37",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "package_devdependencies",
-      "target": "package_devdependencies_eslint_config_prettier"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L38",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "package_devdependencies",
-      "target": "package_devdependencies_eslint_plugin_prettier"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L39",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "package_devdependencies",
-      "target": "package_devdependencies_eslint_plugin_promise"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L40",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "package_devdependencies",
-      "target": "package_devdependencies_eslint_plugin_react_hooks"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L41",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "package_devdependencies",
-      "target": "package_devdependencies_eslint_plugin_security"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L42",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "package_devdependencies",
-      "target": "package_devdependencies_eslint_plugin_unicorn"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L28",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "package_devdependencies",
-      "target": "package_devdependencies_ianvs_prettier_plugin_sort_imports"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L43",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "package_devdependencies",
-      "target": "package_devdependencies_oxlint"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L44",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "package_devdependencies",
-      "target": "package_devdependencies_prettier"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L45",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "package_devdependencies",
-      "target": "package_devdependencies_release_it"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L29",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "package_devdependencies",
-      "target": "package_devdependencies_release_it_conventional_changelog"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L30",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "package_devdependencies",
-      "target": "package_devdependencies_types_node"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L31",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "package_devdependencies",
-      "target": "package_devdependencies_types_react"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L32",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "package_devdependencies",
-      "target": "package_devdependencies_types_react_dom"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L46",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "package_devdependencies",
-      "target": "package_devdependencies_typescript"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L33",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "package_devdependencies",
-      "target": "package_devdependencies_typescript_eslint_eslint_plugin"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L34",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "package_devdependencies",
-      "target": "package_devdependencies_typescript_eslint_parser"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L47",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "package_devdependencies",
-      "target": "package_devdependencies_vite"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L35",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "package_devdependencies",
-      "target": "package_devdependencies_vitejs_plugin_react"
-    },
-    {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L28",
-      "weight": 1.0,
-      "context": "import",
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "package_devdependencies_ianvs_prettier_plugin_sort_imports",
-      "target": "ianvs_prettier_plugin_sort_imports"
-    },
-    {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L29",
-      "weight": 1.0,
-      "context": "import",
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "package_devdependencies_release_it_conventional_changelog",
-      "target": "release_it_conventional_changelog"
-    },
-    {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L30",
-      "weight": 1.0,
-      "context": "import",
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "package_devdependencies_types_node",
-      "target": "types_node"
-    },
-    {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L31",
-      "weight": 1.0,
-      "context": "import",
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "package_devdependencies_types_react",
-      "target": "types_react"
-    },
-    {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L32",
-      "weight": 1.0,
-      "context": "import",
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "package_devdependencies_types_react_dom",
-      "target": "types_react_dom"
-    },
-    {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L33",
-      "weight": 1.0,
-      "context": "import",
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "package_devdependencies_typescript_eslint_eslint_plugin",
-      "target": "typescript_eslint_eslint_plugin"
-    },
-    {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L34",
-      "weight": 1.0,
-      "context": "import",
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "package_devdependencies_typescript_eslint_parser",
-      "target": "typescript_eslint_parser"
-    },
-    {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L35",
-      "weight": 1.0,
-      "context": "import",
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "package_devdependencies_vitejs_plugin_react",
-      "target": "vitejs_plugin_react"
-    },
-    {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L36",
-      "weight": 1.0,
-      "context": "import",
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "package_devdependencies_eslint",
-      "target": "eslint"
-    },
-    {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L37",
-      "weight": 1.0,
-      "context": "import",
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "package_devdependencies_eslint_config_prettier",
-      "target": "eslint_config_prettier"
-    },
-    {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L38",
-      "weight": 1.0,
-      "context": "import",
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "package_devdependencies_eslint_plugin_prettier",
-      "target": "eslint_plugin_prettier"
-    },
-    {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L39",
-      "weight": 1.0,
-      "context": "import",
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "package_devdependencies_eslint_plugin_promise",
-      "target": "eslint_plugin_promise"
-    },
-    {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L40",
-      "weight": 1.0,
-      "context": "import",
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "package_devdependencies_eslint_plugin_react_hooks",
-      "target": "eslint_plugin_react_hooks"
-    },
-    {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L41",
-      "weight": 1.0,
-      "context": "import",
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "package_devdependencies_eslint_plugin_security",
-      "target": "eslint_plugin_security"
-    },
-    {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L42",
-      "weight": 1.0,
-      "context": "import",
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "package_devdependencies_eslint_plugin_unicorn",
-      "target": "eslint_plugin_unicorn"
-    },
-    {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L43",
-      "weight": 1.0,
-      "context": "import",
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "package_devdependencies_oxlint",
-      "target": "oxlint"
-    },
-    {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L44",
-      "weight": 1.0,
-      "context": "import",
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "package_devdependencies_prettier",
-      "target": "prettier"
-    },
-    {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L45",
-      "weight": 1.0,
-      "context": "import",
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "package_devdependencies_release_it",
-      "target": "release_it"
-    },
-    {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L46",
-      "weight": 1.0,
-      "context": "import",
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "package_devdependencies_typescript",
-      "target": "typescript"
-    },
-    {
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L47",
-      "weight": 1.0,
-      "context": "import",
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "package_devdependencies_vite",
-      "target": "vite"
-    },
-    {
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -4515,9 +3743,9 @@
       "source_location": "L19",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "src_components_analysis_analysispanel",
-      "confidence_score": 1.0
+      "target": "src_components_analysis_analysispanel"
     },
     {
       "relation": "contains",
@@ -4656,9 +3884,9 @@
       "source_location": "L19",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "src_components_analysis_analysispanel_analysispanel",
-      "confidence_score": 1.0
+      "target": "src_components_analysis_analysispanel_analysispanel"
     },
     {
       "relation": "imports_from",
@@ -4668,9 +3896,9 @@
       "source_location": "L20",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "src_components_history_historyviews",
-      "confidence_score": 1.0
+      "target": "src_components_history_historyviews"
     },
     {
       "relation": "contains",
@@ -4892,9 +4120,9 @@
       "source_location": "L20",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "src_components_history_historyviews_comparisonpanel",
-      "confidence_score": 1.0
+      "target": "src_components_history_historyviews_comparisonpanel"
     },
     {
       "relation": "calls",
@@ -5024,9 +4252,9 @@
       "source_location": "L20",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "src_components_history_historyviews_historypanel",
-      "confidence_score": 1.0
+      "target": "src_components_history_historyviews_historypanel"
     },
     {
       "relation": "calls",
@@ -5155,9 +4383,9 @@
       "source_location": "L21",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "src_components_input_inputpanel",
-      "confidence_score": 1.0
+      "target": "src_components_input_inputpanel"
     },
     {
       "relation": "contains",
@@ -5178,9 +4406,9 @@
       "source_location": "L21",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "src_components_input_inputpanel_inputpanel",
-      "confidence_score": 1.0
+      "target": "src_components_input_inputpanel_inputpanel"
     },
     {
       "relation": "imports_from",
@@ -5190,9 +4418,9 @@
       "source_location": "L22",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "src_components_stock_stockdataviews",
-      "confidence_score": 1.0
+      "target": "src_components_stock_stockdataviews"
     },
     {
       "relation": "contains",
@@ -5562,9 +4790,9 @@
       "source_location": "L22",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "src_components_stock_stockdataviews_datasection",
-      "confidence_score": 1.0
+      "target": "src_components_stock_stockdataviews_datasection"
     },
     {
       "relation": "calls",
@@ -5634,9 +4862,9 @@
       "source_location": "L22",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "src_components_stock_stockdataviews_fundamentalguide",
-      "confidence_score": 1.0
+      "target": "src_components_stock_stockdataviews_fundamentalguide"
     },
     {
       "relation": "calls",
@@ -5658,9 +4886,9 @@
       "source_location": "L22",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "src_components_stock_stockdataviews_stockidentitycard",
-      "confidence_score": 1.0
+      "target": "src_components_stock_stockdataviews_stockidentitycard"
     },
     {
       "relation": "imports_from",
@@ -5694,9 +4922,9 @@
       "source_location": "L23",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "src_utils_analysis",
-      "confidence_score": 1.0
+      "target": "src_utils_analysis"
     },
     {
       "relation": "contains",
@@ -5980,9 +5208,9 @@
       "source_location": "L23",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "src_utils_analysis_buildanalysis",
-      "confidence_score": 1.0
+      "target": "src_utils_analysis_buildanalysis"
     },
     {
       "relation": "calls",
@@ -6004,9 +5232,9 @@
       "source_location": "L24",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "src_utils_history",
-      "confidence_score": 1.0
+      "target": "src_utils_history"
     },
     {
       "relation": "contains",
@@ -6327,9 +5555,9 @@
       "source_location": "L24",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "src_utils_history_save_score_threshold",
-      "confidence_score": 1.0
+      "target": "src_utils_history_save_score_threshold"
     },
     {
       "relation": "imports",
@@ -6339,9 +5567,9 @@
       "source_location": "L24",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "src_utils_history_max_history_snapshots",
-      "confidence_score": 1.0
+      "target": "src_utils_history_max_history_snapshots"
     },
     {
       "relation": "imports",
@@ -6351,9 +5579,9 @@
       "source_location": "L1",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "src_utils_history_historysnapshot",
-      "confidence_score": 1.0
+      "target": "src_utils_history_historysnapshot"
     },
     {
       "relation": "imports",
@@ -6375,9 +5603,9 @@
       "source_location": "L1",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "src_utils_history_historymetrickey",
-      "confidence_score": 1.0
+      "target": "src_utils_history_historymetrickey"
     },
     {
       "relation": "calls",
@@ -6399,9 +5627,9 @@
       "source_location": "L24",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "src_utils_history_todayiso",
-      "confidence_score": 1.0
+      "target": "src_utils_history_todayiso"
     },
     {
       "relation": "indirect_call",
@@ -6579,9 +5807,9 @@
       "source_location": "L24",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "src_utils_history_loadhistory",
-      "confidence_score": 1.0
+      "target": "src_utils_history_loadhistory"
     },
     {
       "relation": "calls",
@@ -6675,9 +5903,9 @@
       "source_location": "L24",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "src_utils_history_hashistorysnapshot",
-      "confidence_score": 1.0
+      "target": "src_utils_history_hashistorysnapshot"
     },
     {
       "relation": "calls",
@@ -6699,9 +5927,9 @@
       "source_location": "L24",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "src_utils_history_savehistorysnapshot",
-      "confidence_score": 1.0
+      "target": "src_utils_history_savehistorysnapshot"
     },
     {
       "relation": "calls",
@@ -6723,9 +5951,9 @@
       "source_location": "L24",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "src_utils_history_deletehistorysnapshot",
-      "confidence_score": 1.0
+      "target": "src_utils_history_deletehistorysnapshot"
     },
     {
       "relation": "calls",
@@ -6747,9 +5975,9 @@
       "source_location": "L24",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "src_utils_history_updatehistorysnapshot",
-      "confidence_score": 1.0
+      "target": "src_utils_history_updatehistorysnapshot"
     },
     {
       "relation": "calls",
@@ -6771,9 +5999,9 @@
       "source_location": "L24",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "src_utils_history_gethistorystockkey",
-      "confidence_score": 1.0
+      "target": "src_utils_history_gethistorystockkey"
     },
     {
       "relation": "calls",
@@ -6843,9 +6071,9 @@
       "source_location": "L35",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "src_utils_historyhelpers",
-      "confidence_score": 1.0
+      "target": "src_utils_historyhelpers"
     },
     {
       "relation": "contains",
@@ -7000,9 +6228,9 @@
       "source_location": "L35",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "src_utils_historyhelpers_formathistorydate",
-      "confidence_score": 1.0
+      "target": "src_utils_historyhelpers_formathistorydate"
     },
     {
       "relation": "calls",
@@ -7036,9 +6264,9 @@
       "source_location": "L35",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "src_utils_historyhelpers_resolvehistorydate",
-      "confidence_score": 1.0
+      "target": "src_utils_historyhelpers_resolvehistorydate"
     },
     {
       "relation": "calls",
@@ -7060,9 +6288,9 @@
       "source_location": "L35",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "src_utils_historyhelpers_formathistorystock",
-      "confidence_score": 1.0
+      "target": "src_utils_historyhelpers_formathistorystock"
     },
     {
       "relation": "calls",
@@ -7084,9 +6312,9 @@
       "source_location": "L35",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "src_utils_historyhelpers_historyurlparams",
-      "confidence_score": 1.0
+      "target": "src_utils_historyhelpers_historyurlparams"
     },
     {
       "relation": "calls",
@@ -7108,9 +6336,9 @@
       "source_location": "L35",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "src_utils_historyhelpers_readhistoryparams",
-      "confidence_score": 1.0
+      "target": "src_utils_historyhelpers_readhistoryparams"
     },
     {
       "relation": "calls",
@@ -7132,9 +6360,9 @@
       "source_location": "L42",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "src_utils_labeltranslator",
-      "confidence_score": 1.0
+      "target": "src_utils_labeltranslator"
     },
     {
       "relation": "contains",
@@ -7391,9 +6619,9 @@
       "source_location": "L42",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "src_utils_labeltranslator_translatesectionlabel",
-      "confidence_score": 1.0
+      "target": "src_utils_labeltranslator_translatesectionlabel"
     },
     {
       "relation": "calls",
@@ -7439,9 +6667,9 @@
       "source_location": "L43",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "src_utils_parser",
-      "confidence_score": 1.0
+      "target": "src_utils_parser"
     },
     {
       "relation": "contains",
@@ -7938,9 +7166,9 @@
       "source_location": "L43",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "src_utils_parser_parsestocktext",
-      "confidence_score": 1.0
+      "target": "src_utils_parser_parsestocktext"
     },
     {
       "relation": "calls",
@@ -8979,9 +8207,9 @@
       "source_location": "L2",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "src_utils_types",
-      "confidence_score": 1.0
+      "target": "src_utils_types"
     },
     {
       "relation": "contains",
@@ -9156,9 +8384,9 @@
       "source_location": "L2",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "src_utils_types_parsedsection",
-      "confidence_score": 1.0
+      "target": "src_utils_types_parsedsection"
     },
     {
       "relation": "contains",
@@ -9185,13 +8413,785 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "package",
+      "target": "package_dependencies"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L27",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "package",
+      "target": "package_devdependencies"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "package",
+      "target": "package_name"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "package",
+      "target": "package_private"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "package",
+      "target": "package_scripts"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "package",
+      "target": "package_type"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "package",
+      "target": "package_version"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L44",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "src_app",
+      "target": "package"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "package_scripts",
+      "target": "package_scripts_build"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "package_scripts",
+      "target": "package_scripts_dev"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "package_scripts",
+      "target": "package_scripts_format"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "package_scripts",
+      "target": "package_scripts_format_check"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "package_scripts",
+      "target": "package_scripts_lint"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "package_scripts",
+      "target": "package_scripts_lint_fix"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "package_scripts",
+      "target": "package_scripts_lint_oxlint"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "package_scripts",
+      "target": "package_scripts_preview"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "package_scripts",
+      "target": "package_scripts_release"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "package_scripts",
+      "target": "package_scripts_release_alpha"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "package_scripts",
+      "target": "package_scripts_release_beta"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "package_scripts",
+      "target": "package_scripts_release_major"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "package_scripts",
+      "target": "package_scripts_release_minor"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "package_scripts",
+      "target": "package_scripts_release_patch"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "package_dependencies",
+      "target": "package_dependencies_lucide_react"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L24",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "package_dependencies",
+      "target": "package_dependencies_react"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "package_dependencies",
+      "target": "package_dependencies_react_dom"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L23",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "package_dependencies_lucide_react",
+      "target": "lucide_react"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L24",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "package_dependencies_react",
+      "target": "react"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L25",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "package_dependencies_react_dom",
+      "target": "react_dom"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L36",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_eslint"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L37",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_eslint_config_prettier"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L38",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_eslint_plugin_prettier"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L39",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_eslint_plugin_promise"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L40",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_eslint_plugin_react_hooks"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L41",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_eslint_plugin_security"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L42",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_eslint_plugin_unicorn"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L28",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_ianvs_prettier_plugin_sort_imports"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L43",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_oxlint"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L44",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_prettier"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L45",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_release_it"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L29",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_release_it_conventional_changelog"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_types_node"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L31",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_types_react"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L32",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_types_react_dom"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L46",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_typescript"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L33",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_typescript_eslint_eslint_plugin"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L34",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_typescript_eslint_parser"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L47",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_vite"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L35",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_vitejs_plugin_react"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L28",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "package_devdependencies_ianvs_prettier_plugin_sort_imports",
+      "target": "ianvs_prettier_plugin_sort_imports"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L29",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "package_devdependencies_release_it_conventional_changelog",
+      "target": "release_it_conventional_changelog"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L30",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "package_devdependencies_types_node",
+      "target": "types_node"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L31",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "package_devdependencies_types_react",
+      "target": "types_react"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L32",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "package_devdependencies_types_react_dom",
+      "target": "types_react_dom"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L33",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "package_devdependencies_typescript_eslint_eslint_plugin",
+      "target": "typescript_eslint_eslint_plugin"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L34",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "package_devdependencies_typescript_eslint_parser",
+      "target": "typescript_eslint_parser"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L35",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "package_devdependencies_vitejs_plugin_react",
+      "target": "vitejs_plugin_react"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L36",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "package_devdependencies_eslint",
+      "target": "eslint"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L37",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "package_devdependencies_eslint_config_prettier",
+      "target": "eslint_config_prettier"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L38",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "package_devdependencies_eslint_plugin_prettier",
+      "target": "eslint_plugin_prettier"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L39",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "package_devdependencies_eslint_plugin_promise",
+      "target": "eslint_plugin_promise"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L40",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "package_devdependencies_eslint_plugin_react_hooks",
+      "target": "eslint_plugin_react_hooks"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L41",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "package_devdependencies_eslint_plugin_security",
+      "target": "eslint_plugin_security"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L42",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "package_devdependencies_eslint_plugin_unicorn",
+      "target": "eslint_plugin_unicorn"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L43",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "package_devdependencies_oxlint",
+      "target": "oxlint"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L44",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "package_devdependencies_prettier",
+      "target": "prettier"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L45",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "package_devdependencies_release_it",
+      "target": "release_it"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L46",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "package_devdependencies_typescript",
+      "target": "typescript"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L47",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "package_devdependencies_vite",
+      "target": "vite"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "src/App.tsx",
       "source_location": "L54",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "src_app_app",
-      "confidence_score": 1.0
+      "target": "src_app_app"
     },
     {
       "relation": "contains",
@@ -9200,9 +9200,9 @@
       "source_location": "L48",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "src_app_countmetrics",
-      "confidence_score": 1.0
+      "target": "src_app_countmetrics"
     },
     {
       "relation": "contains",
@@ -9211,9 +9211,9 @@
       "source_location": "L51",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "src_app_counttables",
-      "confidence_score": 1.0
+      "target": "src_app_counttables"
     },
     {
       "relation": "calls",
@@ -9223,9 +9223,9 @@
       "source_location": "L75",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_app_app",
-      "target": "src_app_countmetrics",
-      "confidence_score": 1.0
+      "target": "src_app_countmetrics"
     },
     {
       "relation": "calls",
@@ -9235,10 +9235,11 @@
       "source_location": "L76",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "src_app_app",
-      "target": "src_app_counttables",
-      "confidence_score": 1.0
+      "target": "src_app_counttables"
     }
   ],
-  "hyperedges": []
+  "hyperedges": [],
+  "built_at_commit": "d3ea081562545e62bb016797261d8f1fb85fd490"
 }
