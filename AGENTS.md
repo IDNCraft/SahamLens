@@ -5,6 +5,14 @@
 Generated/modified env config → real local val in `.env` + safe placeholder in `.env.example`.
 Secret/credential → never `.env.example`, source, docs.
 
+## Graphify Team Sync
+
+- Graphify is optional; clone, setup, development, and checks must not depend on it.
+- When using Graphify after a fresh clone, check `graphify-out/graph.json` and `graphify-out/manifest.json`.
+- If both files exist, reuse the shared graph and skip extraction.
+- If either file is missing and Graphify is needed, run `graphify . --update --code-only` from the repository root.
+- Keep shared graph outputs in Git; keep machine-local Graphify metadata ignored.
+
 ## Git
 
 After vibecode:
