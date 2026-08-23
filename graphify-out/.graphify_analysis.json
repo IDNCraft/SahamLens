@@ -15,7 +15,12 @@
       "src_components_history_historyviews_comparisonpanel",
       "src_components_history_historyviews_historychart",
       "src_components_history_historyviews_historypanel",
+      "src_components_input_gettingstartedguide",
+      "src_components_input_gettingstartedguide_gettingstartedguide",
+      "src_components_input_inputpanel",
+      "src_components_input_inputpanel_inputpanel",
       "src_main",
+      "src_utils_analysis_stockanalysis",
       "src_utils_history",
       "src_utils_history_deletehistorysnapshot",
       "src_utils_history_findprevioushistorysnapshot",
@@ -53,7 +58,9 @@
       "src_utils_historyhelpers_localisodate",
       "src_utils_historyhelpers_readhistoryparams",
       "src_utils_historyhelpers_resolvehistorydate",
-      "src_utils_historyhelpers_weekdayindexes"
+      "src_utils_historyhelpers_weekdayindexes",
+      "src_utils_labeltranslator_translatesectionlabel",
+      "src_utils_types_stockdata"
     ],
     "1": [
       "src_utils_stockbittext",
@@ -97,53 +104,9 @@
       "src_utils_types_priceperformanceperiod",
       "src_utils_types_shareholdercompositionrecord",
       "src_utils_types_shareholderrecord",
-      "src_utils_types_stockdata",
       "src_utils_types_subsidiaryrecord"
     ],
     "2": [
-      "lucide_react",
-      "package",
-      "package_author",
-      "package_author_name",
-      "package_author_url",
-      "package_dependencies",
-      "package_dependencies_lucide_react",
-      "package_dependencies_react",
-      "package_dependencies_react_dom",
-      "package_description",
-      "package_engines",
-      "package_engines_bun",
-      "package_engines_node",
-      "package_license",
-      "package_name",
-      "package_repository",
-      "package_repository_type",
-      "package_repository_url",
-      "package_scripts",
-      "package_scripts_build",
-      "package_scripts_check_fast",
-      "package_scripts_check_full",
-      "package_scripts_dev",
-      "package_scripts_format",
-      "package_scripts_format_check",
-      "package_scripts_lint",
-      "package_scripts_lint_fix",
-      "package_scripts_lint_oxlint",
-      "package_scripts_prepush",
-      "package_scripts_preview",
-      "package_scripts_release",
-      "package_scripts_release_alpha",
-      "package_scripts_release_beta",
-      "package_scripts_release_major",
-      "package_scripts_release_minor",
-      "package_scripts_release_patch",
-      "package_scripts_typecheck",
-      "package_type",
-      "package_version",
-      "react",
-      "react_dom"
-    ],
-    "3": [
       "eslint",
       "eslint_config_prettier",
       "eslint_plugin_prettier",
@@ -182,7 +145,7 @@
       "typescript_eslint_parser",
       "vitejs_plugin_react"
     ],
-    "4": [
+    "3": [
       "src_components_stock_stockdataviews",
       "src_components_stock_stockdataviews_datasection",
       "src_components_stock_stockdataviews_datatable",
@@ -212,10 +175,9 @@
       "src_utils_labeltranslator_parseval",
       "src_utils_labeltranslator_section_labels",
       "src_utils_labeltranslator_translatemetriclabel",
-      "src_utils_labeltranslator_translatesectionlabel",
       "src_utils_labeltranslator_translatetablelabel"
     ],
-    "5": [
+    "4": [
       "ref_dom",
       "ref_src",
       "ref_vite_client",
@@ -240,6 +202,30 @@
       "tsconfig_app_compileroptions_verbatimmodulesyntax",
       "tsconfig_app_include",
       "tsconfig_app_json_ref_es2023"
+    ],
+    "5": [
+      "lucide_react",
+      "package",
+      "package_author",
+      "package_author_name",
+      "package_author_url",
+      "package_dependencies",
+      "package_dependencies_lucide_react",
+      "package_dependencies_react",
+      "package_dependencies_react_dom",
+      "package_description",
+      "package_engines",
+      "package_engines_bun",
+      "package_engines_node",
+      "package_license",
+      "package_name",
+      "package_repository",
+      "package_repository_type",
+      "package_repository_url",
+      "package_type",
+      "package_version",
+      "react",
+      "react_dom"
     ],
     "6": [
       "src_utils_parser",
@@ -309,6 +295,26 @@
       "tsconfig_node_json_ref_es2023"
     ],
     "9": [
+      "package_scripts",
+      "package_scripts_build",
+      "package_scripts_check_fast",
+      "package_scripts_check_full",
+      "package_scripts_dev",
+      "package_scripts_format",
+      "package_scripts_format_check",
+      "package_scripts_lint",
+      "package_scripts_lint_fix",
+      "package_scripts_lint_oxlint",
+      "package_scripts_preview",
+      "package_scripts_release",
+      "package_scripts_release_alpha",
+      "package_scripts_release_beta",
+      "package_scripts_release_major",
+      "package_scripts_release_minor",
+      "package_scripts_release_patch",
+      "package_scripts_typecheck"
+    ],
+    "10": [
       "src_utils_analysis",
       "src_utils_analysis_analysisrule",
       "src_utils_analysis_analysisstatus",
@@ -322,47 +328,46 @@
       "src_utils_analysis_horizonsignal",
       "src_utils_analysis_numberformatter",
       "src_utils_analysis_ruleconfig",
-      "src_utils_analysis_stockanalysis",
       "src_utils_analysis_valuationsignal"
     ],
-    "10": [
-      "src_components_input_gettingstartedguide",
-      "src_components_input_gettingstartedguide_gettingstartedguide",
-      "src_components_input_inputpanel",
-      "src_components_input_inputpanel_inputpanel"
-    ],
     "11": [
+      "test_release_checks_test",
+      "test_release_checks_test_readrepositoryfile",
+      "test_release_checks_test_rootdirectory"
+    ],
+    "12": [
       "tsconfig",
       "tsconfig_files",
       "tsconfig_references"
     ],
-    "12": [
+    "13": [
       "eslint_config",
       "eslint_config_unicornrecommendedrules"
     ],
-    "13": [
+    "14": [
       "prettierrc"
     ],
-    "14": [
+    "15": [
       "vite_config"
     ]
   },
   "cohesion": {
-    "0": 0.1081277213352685,
-    "1": 0.10963455149501661,
-    "2": 0.04878048780487805,
-    "3": 0.05405405405405406,
-    "4": 0.12258064516129032,
-    "5": 0.08333333333333333,
+    "0": 0.09209039548022599,
+    "1": 0.11265969802555169,
+    "2": 0.05405405405405406,
+    "3": 0.12183908045977011,
+    "4": 0.08333333333333333,
+    "5": 0.09090909090909091,
     "6": 0.1619047619047619,
     "7": 0.1,
     "8": 0.1,
-    "9": 0.19047619047619047,
-    "10": 0.6666666666666666,
+    "9": 0.1111111111111111,
+    "10": 0.2087912087912088,
     "11": 0.6666666666666666,
-    "12": 1.0,
+    "12": 0.6666666666666666,
     "13": 1.0,
-    "14": 1.0
+    "14": 1.0,
+    "15": 1.0
   },
   "gods": [
     {
@@ -376,13 +381,13 @@
       "degree": 19
     },
     {
-      "id": "package_scripts",
-      "label": "scripts",
-      "degree": 19
-    },
-    {
       "id": "tsconfig_app_compileroptions",
       "label": "compilerOptions",
+      "degree": 18
+    },
+    {
+      "id": "package_scripts",
+      "label": "scripts",
       "degree": 18
     },
     {
@@ -440,6 +445,17 @@
       "why": "connects across different repos/directories"
     },
     {
+      "source": "DataSection()",
+      "target": "translateSectionLabel()",
+      "source_files": [
+        "src/components/stock/StockDataViews.tsx",
+        "src/utils/labelTranslator.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "bridges separate communities"
+    },
+    {
       "source": "App()",
       "target": "buildAnalysis()",
       "source_files": [
@@ -460,17 +476,6 @@
       "confidence": "INFERRED",
       "relation": "indirect_call",
       "why": "inferred connection - not explicitly stated in source"
-    },
-    {
-      "source": "App()",
-      "target": "translateSectionLabel()",
-      "source_files": [
-        "src/App.tsx",
-        "src/utils/labelTranslator.ts"
-      ],
-      "confidence": "EXTRACTED",
-      "relation": "calls",
-      "why": "bridges separate communities"
     }
   ],
   "tokens": {

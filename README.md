@@ -101,12 +101,15 @@ bun run preview
 
 Kontribusi terbuka untuk parser, label metrik, aturan analisis, aksesibilitas, dan pengalaman membaca data.
 
-Sebelum membuat pull request:
+Sebelum membuat pull request atau rilis, jalankan pemeriksaan berikut:
 
 ```bash
-bun run lint
+bun run check:fast
+bun run typecheck
 bun run build
 ```
+
+Perintah final adalah `bun run build`. Release-it menjalankan `bun run check:fast`, lalu `bun run build` sebelum rilis.
 
 Jaga perubahan tetap fokus, sertakan contoh snapshot jika mengubah parser, dan jelaskan dampak perubahan aturan terhadap skor.
 

@@ -19,7 +19,7 @@
     }
   },
   "hooks": {
-    "before:init": ["bun run lint", "bun run build"],
+    "before:init": ["bun run check:fast", "bun run build"],
     "after:release": "echo 'Successfully released ${name} v${version} to ${repo.repository} 🎉'"
   }
 }

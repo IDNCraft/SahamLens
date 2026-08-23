@@ -186,7 +186,7 @@ function App() {
       .then((repository) => {
         if (!cancelled) setGithubStars(repository.stargazers_count)
       })
-      .catch(() => { })
+      .catch(() => {})
 
     return () => {
       cancelled = true

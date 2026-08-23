@@ -407,7 +407,7 @@ h1 em {
   align-items: start;
 }
 
-.workspace>.panel {
+.workspace > .panel {
   min-width: 0;
 }
 
@@ -751,7 +751,7 @@ textarea::placeholder {
   background: rgba(217, 238, 232, 0.18);
 }
 
-.fundamental-guide-item>div {
+.fundamental-guide-item > div {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
@@ -1101,7 +1101,7 @@ textarea::placeholder {
   line-height: 1;
 }
 
-.analysis-score>span {
+.analysis-score > span {
   color: var(--muted);
   font-family: var(--mono);
   font-size: 12px;
@@ -1185,7 +1185,7 @@ textarea::placeholder {
   font-size: 14px;
 }
 
-.analysis-subheading>span {
+.analysis-subheading > span {
   color: var(--muted);
   font-family: var(--mono);
   font-size: 10px;
@@ -1202,7 +1202,7 @@ textarea::placeholder {
   border-top: 1px solid var(--line);
 }
 
-.analysis-reason-list li>div,
+.analysis-reason-list li > div,
 .analysis-rule-topline,
 .analysis-rule-meta {
   display: flex;
@@ -1320,7 +1320,7 @@ input[type='date'] {
   font-size: 11px;
 }
 
-.analysis-save-bar>small {
+.analysis-save-bar > small {
   grid-column: 1 / -1;
   color: var(--muted);
   font-size: 10px;
@@ -1351,7 +1351,7 @@ input[type='date'] {
   font-size: 12px;
 }
 
-.history-header>strong {
+.history-header > strong {
   color: var(--teal);
   font-family: var(--mono);
   font-size: 12px;
@@ -1424,7 +1424,7 @@ input[type='date'] {
   margin-bottom: 6px;
 }
 
-.history-chart-summary>span,
+.history-chart-summary > span,
 .history-chart-summary .panel-kicker {
   color: var(--muted);
   font-family: var(--mono);
@@ -1521,7 +1521,7 @@ input[type='date'] {
 }
 
 .history-record strong,
-.history-record>span:nth-child(2) {
+.history-record > span:nth-child(2) {
   color: var(--ink);
   font-family: var(--mono);
 }
@@ -1616,7 +1616,7 @@ input[type='date'] {
   font-size: 12px;
 }
 
-.comparison-header>strong {
+.comparison-header > strong {
   color: var(--teal);
   font-family: var(--mono);
   font-size: 12px;
@@ -2091,7 +2091,7 @@ select {
   font-size: 14px;
 }
 
-.table-heading>svg {
+.table-heading > svg {
   color: var(--teal);
 }
 
@@ -2354,7 +2354,7 @@ tbody tr:hover {
     flex: 1 1 100%;
   }
 
-  .analysis-save-bar>small {
+  .analysis-save-bar > small {
     display: block;
     margin-top: 9px;
   }
@@ -2376,7 +2376,7 @@ tbody tr:hover {
     display: block;
   }
 
-  .history-header>strong {
+  .history-header > strong {
     display: block;
     margin-top: 12px;
   }
@@ -2385,7 +2385,7 @@ tbody tr:hover {
     display: block;
   }
 
-  .comparison-header>strong {
+  .comparison-header > strong {
     display: block;
     margin-top: 12px;
   }
@@ -2509,7 +2509,6 @@ tbody tr:hover {
 }
 
 @media (prefers-reduced-motion: reduce) {
-
   *,
   *::before,
   *::after {
