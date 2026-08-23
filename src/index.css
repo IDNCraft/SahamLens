@@ -598,6 +598,10 @@ textarea::placeholder {
   font-size: 10px;
 }
 
+.parse-status.is-partial {
+  color: var(--coral);
+}
+
 .preview-header-actions {
   display: inline-flex;
   align-items: center;
@@ -653,6 +657,81 @@ textarea::placeholder {
 .stats-row span {
   color: var(--muted);
   font-size: 10px;
+}
+
+.parse-warning-panel {
+  margin: 16px 17px 0;
+  padding: 14px 16px;
+  border: 1px solid rgba(213, 104, 77, 0.35);
+  border-left: 3px solid var(--coral);
+  background: rgba(213, 104, 77, 0.06);
+}
+
+.parse-warning-heading {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: var(--coral);
+}
+
+.parse-warning-heading > div {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.parse-warning-heading strong {
+  font-size: 12px;
+}
+
+.parse-warning-heading span,
+.parse-warning-type {
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 9px;
+}
+
+.parse-warning-list {
+  display: grid;
+  gap: 9px;
+  margin: 13px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.parse-warning-list li {
+  display: grid;
+  gap: 3px;
+  padding-top: 9px;
+  border-top: 1px solid rgba(213, 104, 77, 0.18);
+}
+
+.parse-warning-list p,
+.parse-warning-list small,
+.parse-warning-recovery {
+  margin: 0;
+}
+
+.parse-warning-list p {
+  color: var(--ink);
+  font-size: 11px;
+  line-height: 1.45;
+}
+
+.parse-warning-list small {
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 9px;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+}
+
+.parse-warning-recovery {
+  margin-top: 13px;
+  color: var(--ink-soft);
+  font-size: 10px;
+  line-height: 1.5;
 }
 
 .unit-strip {

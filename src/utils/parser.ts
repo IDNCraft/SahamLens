@@ -1,4 +1,4 @@
-import type { ParsedSection, ParsedTable, ParsedTableRow, ParseResult } from './types'
+import type { ParsedSection, ParsedTable, ParsedTableRow, ParseResult, ParseWarning } from './types'
 
 import { normalizeStockbitLines } from './stockbitText'
 import { buildStockData } from './stockData'
@@ -15,7 +15,7 @@ type TableParse = {
   recognizedLines: number
 }
 
-const SECTION_TITLES = new Set([
+const EXPECTED_SECTION_TITLES = [
   'Current Valuation',
   'Per Share',
   'Solvency',
@@ -28,7 +28,9 @@ const SECTION_TITLES = new Set([
   'Balance Sheet',
   'Cash Flow Statement',
   'Price Performance',
-])
+] as const
+
+const SECTION_TITLES = new Set<string>(EXPECTED_SECTION_TITLES)
 
 const FINANCIAL_ROW_LABELS = new Set([
   'Q1',
@@ -170,7 +172,17 @@ const isValueLine = (line: string): boolean =>
   !NON_VALUE_LINES.has(line) &&
   !METRIC_LABEL_SET.has(line) &&
   !FINANCIAL_ROW_LABELS.has(line) &&
-  (line === '-' || /\d|%|\(|\)/.test(line))
+  (line === '-' || /^(?:N\/A|NA)$/i.test(line) || /\d|%|\(|\)/.test(line))
+
+const isUnknownLabelCandidate = (line: string, nextLine: string | undefined): boolean =>
+  Boolean(nextLine) &&
+  !SECTION_TITLES.has(line) &&
+  !METRIC_LABEL_SET.has(line) &&
+  !NON_VALUE_LINES.has(line) &&
+  !FINANCIAL_ROW_LABELS.has(line) &&
+  !PERFORMANCE_WINDOWS.has(line) &&
+  line !== 'Dividend History' &&
+  isValueLine(nextLine ?? '')
 
 const finishSection = (sections: ParsedSection[], current: MutableSection | null): void => {
   if (current && (current.metrics.length > 0 || current.tables.length > 0)) {
@@ -286,6 +298,10 @@ const parseDividendTable = (lines: readonly string[], startIndex: number): Table
 export const parseStockText = (rawText: string): ParseResult => {
   const lines = cleanLines(rawText)
   const sections: ParsedSection[] = []
+  const seenSectionTitles: string[] = []
+  const warnings: ParseWarning[] = []
+  const unknownLabels = new Map<string, string>()
+  const missingFields: string[] = []
   let current: MutableSection | null = null
   let recognizedLines = 0
   let index = 0
@@ -296,12 +312,22 @@ export const parseStockText = (rawText: string): ParseResult => {
     if (SECTION_TITLES.has(line)) {
       finishSection(sections, current)
       current = { title: line, metrics: [], tables: [] }
+      if (!seenSectionTitles.includes(line)) {
+        seenSectionTitles.push(line)
+      }
       recognizedLines += 1
       index += 1
       continue
     }
 
+    const nextLine = lines[index + 1]
     if (!current) {
+      if (isUnknownLabelCandidate(line, nextLine)) {
+        unknownLabels.set(line, `Input, baris ${index + 1}: "${line}" → "${nextLine ?? ''}"`)
+        index += 2
+        continue
+      }
+
       index += 1
       continue
     }
@@ -326,10 +352,22 @@ export const parseStockText = (rawText: string): ParseResult => {
       continue
     }
 
-    const nextLine = lines[index + 1]
-    if (nextLine && !SECTION_TITLES.has(nextLine) && isValueLine(nextLine)) {
-      current.metrics.push({ label: line, value: nextLine })
-      recognizedLines += 2
+    if (METRIC_LABEL_SET.has(line)) {
+      if (nextLine && !SECTION_TITLES.has(nextLine) && isValueLine(nextLine)) {
+        current.metrics.push({ label: line, value: nextLine })
+        recognizedLines += 2
+        index += 2
+        continue
+      }
+
+      missingFields.push(`${current.title}: ${line} (baris ${index + 1})`)
+      index += 1
+      continue
+    }
+
+    if (isUnknownLabelCandidate(line, nextLine)) {
+      const evidence = `Bagian ${current.title}, baris ${index + 1}: "${line}" → "${nextLine}"`
+      unknownLabels.set(line, evidence)
       index += 2
       continue
     }
@@ -345,11 +383,49 @@ export const parseStockText = (rawText: string): ParseResult => {
     stockData.market_quote.snapshots.length > 0 ? 'quote' : null,
   ].filter(Boolean).length
 
+  if (lines.length === 0) {
+    warnings.push({
+      type: 'empty-input',
+      message: 'Input kosong: belum ada data snapshot yang dapat dibaca.',
+      evidence: '0 baris setelah normalisasi input.',
+    })
+  }
+
+  if (missingFields.length > 0) {
+    warnings.push({
+      type: 'missing-field',
+      message: `${missingFields.length} field memiliki label yang dikenali tetapi nilainya belum lengkap.`,
+      evidence: missingFields.join('; '),
+    })
+  }
+
+  for (const [label, evidence] of unknownLabels) {
+    warnings.push({
+      type: 'unknown-label',
+      message: `Label "${label}" tidak dikenali sehingga tidak dimasukkan ke hasil terstruktur.`,
+      evidence,
+    })
+  }
+
+  const missingSections = EXPECTED_SECTION_TITLES.filter(
+    (title) => !seenSectionTitles.includes(title)
+  )
+  if (lines.length > 0 && missingSections.length > 0) {
+    warnings.push({
+      type: 'missing-section',
+      message: `${missingSections.length} bagian snapshot belum ditemukan.`,
+      evidence: `Belum ditemukan: ${missingSections.join(', ')}. Ditemukan: ${
+        seenSectionTitles.length > 0 ? seenSectionTitles.join(', ') : 'tidak ada'
+      }.`,
+    })
+  }
+
   return {
     sections,
     rawLines: lines.length,
     recognizedLines: recognizedLines + metadataRecognizedLines,
-    warnings: [],
+    warnings,
+    isPartial: warnings.length > 0,
     stockData,
   }
 }

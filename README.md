@@ -70,6 +70,19 @@ Buka URL lokal yang ditampilkan Vite di terminal.
 4. Buka tab **Analisis saham** untuk meninjau skor, metrik, dan alasan setiap aturan.
 5. Simpan snapshot jika skor memenuhi ambang yang ditetapkan, lalu pantau perubahannya di **Riwayat analisis**.
 
+### Arti peringatan parser
+
+Setelah **Rapikan data**, SahamLens menandai hasil sebagai **Snapshot parsial** jika input kosong, bagian snapshot belum lengkap, nilai field belum tersedia, atau ada label yang tidak dikenali. Setiap peringatan menampilkan tipe dan bukti baris yang memicunya. Peringatan bersifat informatif: field yang berhasil dibaca tetap ditampilkan dan output **JSON** tetap dapat dibuka.
+
+| Tipe              | Arti                                                                            |
+| ----------------- | ------------------------------------------------------------------------------- |
+| `empty-input`     | Tidak ada baris snapshot setelah normalisasi input.                             |
+| `missing-section` | Satu atau lebih bagian snapshot yang diharapkan belum ditemukan.                |
+| `missing-field`   | Label dikenal parser, tetapi nilai setelahnya belum lengkap.                    |
+| `unknown-label`   | Label berpasangan dengan nilai, tetapi belum didukung parser sehingga dilewati. |
+
+Untuk memulihkan hasil parsial, salin ulang seluruh teks dari tab **Key Stats** menggunakan **Copy all text**, pastikan data fundamental selesai dimuat, lalu tempel dan klik **Rapikan data** lagi. Jika label baru tetap muncul, hasil yang sudah terbaca masih dapat dipakai sambil menambahkan dukungan label tersebut di parser.
+
 ## Arsitektur
 
 | Layer           | Teknologi / Peran                                               |

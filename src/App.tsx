@@ -1,6 +1,7 @@
 import type { HistoryMetricKey, HistorySnapshot } from './utils/history'
-import type { ParsedSection } from './utils/types'
+import type { ParsedSection, ParseWarningType } from './utils/types'
 import {
+  AlertTriangle,
   ArrowUpRight,
   Braces,
   CheckCircle2,
@@ -51,6 +52,13 @@ const countMetrics = (sections: readonly ParsedSection[]): number =>
 const countTables = (sections: readonly ParsedSection[]): number =>
   sections.reduce((total, section) => total + section.tables.length, 0)
 
+const warningTypeLabels: Record<ParseWarningType, string> = {
+  'empty-input': 'Input kosong',
+  'missing-section': 'Bagian hilang',
+  'missing-field': 'Field hilang',
+  'unknown-label': 'Label tidak dikenal',
+}
+
 function App() {
   const [rawText, setRawText] = useState('')
   const [parsed, setParsed] = useState(() => parseStockText(''))
@@ -75,6 +83,13 @@ function App() {
   const metricCount = countMetrics(parsed.sections)
   const tableCount = countTables(parsed.sections)
   const hasParsedData = parsed.recognizedLines > 0
+  const parseStatus = isDirty
+    ? 'Perlu diproses'
+    : parsed.rawLines === 0
+      ? 'Menunggu data'
+      : parsed.isPartial
+        ? 'Snapshot parsial'
+        : 'Siap ditinjau'
   const analysis = buildAnalysis(parsed.stockData, scoringMethod)
   const canSaveHistory = analysis.score !== null && analysis.score >= SAVE_SCORE_THRESHOLD
   const visibleSections =
@@ -270,18 +285,28 @@ function App() {
               <Database size={17} aria-hidden="true" />
               <span>Status data</span>
             </div>
-            <strong>
-              {isDirty ? 'Perlu diproses' : hasParsedData ? 'Siap ditinjau' : 'Menunggu data'}
-            </strong>
+            <strong>{parseStatus}</strong>
             <p>
               {isDirty
                 ? 'Data baru belum diproses.'
-                : hasParsedData
-                  ? `${sectionCount} bagian siap diperiksa.`
-                  : 'Tempel snapshot saham untuk memulai.'}
+                : parsed.isPartial
+                  ? `${parsed.warnings.length} peringatan perlu ditinjau.`
+                  : hasParsedData
+                    ? `${sectionCount} bagian siap diperiksa.`
+                    : 'Tempel snapshot saham untuk memulai.'}
             </p>
             <div className="signal-bar">
-              <span style={{ width: isDirty ? '42%' : hasParsedData ? '100%' : '0%' }} />
+              <span
+                style={{
+                  width: isDirty
+                    ? '42%'
+                    : parsed.rawLines === 0
+                      ? '0%'
+                      : parsed.isPartial
+                        ? '72%'
+                        : '100%',
+                }}
+              />
             </div>
           </div>
         </section>
@@ -329,9 +354,13 @@ function App() {
                 </div>
               </div>
               <div className="preview-header-actions">
-                <div className="parse-status">
-                  <CheckCircle2 size={15} aria-hidden="true" />{' '}
-                  {isDirty ? 'Perlu diproses' : hasParsedData ? 'Siap ditinjau' : 'Menunggu data'}
+                <div className={`parse-status ${parsed.isPartial ? 'is-partial' : ''}`}>
+                  {parsed.isPartial ? (
+                    <AlertTriangle size={15} aria-hidden="true" />
+                  ) : (
+                    <CheckCircle2 size={15} aria-hidden="true" />
+                  )}{' '}
+                  {parseStatus}
                 </div>
                 <button
                   type="button"
@@ -344,6 +373,37 @@ function App() {
                 </button>
               </div>
             </div>
+
+            {parsed.warnings.length > 0 && (
+              <aside
+                className="parse-warning-panel"
+                aria-label="Peringatan parser"
+                aria-live="polite"
+              >
+                <div className="parse-warning-heading">
+                  <AlertTriangle size={17} aria-hidden="true" />
+                  <div>
+                    <strong>Snapshot parsial</strong>
+                    <span>{parsed.warnings.length} peringatan</span>
+                  </div>
+                </div>
+                <ul className="parse-warning-list">
+                  {parsed.warnings.map((warning) => (
+                    <li key={`${warning.type}-${warning.evidence}`}>
+                      <span className="parse-warning-type">
+                        {warningTypeLabels[warning.type]} · {warning.type}
+                      </span>
+                      <p>{warning.message}</p>
+                      <small>Bukti: {warning.evidence}</small>
+                    </li>
+                  ))}
+                </ul>
+                <p className="parse-warning-recovery">
+                  Salin ulang seluruh snapshot dari tab Key Stats untuk melengkapi hasil. Field yang
+                  sudah terbaca dan output JSON tetap tersedia.
+                </p>
+              </aside>
+            )}
 
             <div className="stats-row">
               <div>

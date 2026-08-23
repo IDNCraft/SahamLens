@@ -20,11 +20,20 @@ export interface ParsedSection {
   readonly tables: readonly ParsedTable[]
 }
 
+export type ParseWarningType = 'empty-input' | 'missing-section' | 'missing-field' | 'unknown-label'
+
+export interface ParseWarning {
+  readonly type: ParseWarningType
+  readonly message: string
+  readonly evidence: string
+}
+
 export interface ParseResult {
   readonly sections: readonly ParsedSection[]
   readonly rawLines: number
   readonly recognizedLines: number
-  readonly warnings: readonly string[]
+  readonly warnings: readonly ParseWarning[]
+  readonly isPartial: boolean
   readonly stockData: StockData
 }
 
