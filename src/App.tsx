@@ -14,7 +14,7 @@ import {
   Sparkles,
   Star,
 } from 'lucide-react'
-import { useEffect, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 
 import { AnalysisPanel } from './components/analysis/AnalysisPanel'
 import { ComparisonPanel, HistoryPanel } from './components/history/HistoryViews'
@@ -75,7 +75,10 @@ function App() {
   const metricCount = countMetrics(parsed.sections)
   const tableCount = countTables(parsed.sections)
   const hasParsedData = parsed.recognizedLines > 0
-  const analysis = buildAnalysis(parsed.stockData, scoringMethod)
+  const analysis = useMemo(
+    () => buildAnalysis(parsed.stockData, scoringMethod),
+    [parsed.stockData, scoringMethod]
+  )
   const canSaveHistory = analysis.score !== null && analysis.score >= SAVE_SCORE_THRESHOLD
   const visibleSections =
     activeSection === 'all'
@@ -186,7 +189,7 @@ function App() {
       .then((repository) => {
         if (!cancelled) setGithubStars(repository.stargazers_count)
       })
-      .catch(() => { })
+      .catch(() => {})
 
     return () => {
       cancelled = true
