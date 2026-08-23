@@ -17,6 +17,18 @@ bun install
 bun run build
 ```
 
+## Graphify (Opsional)
+
+- Graphify opsional; tidak diperlukan untuk setup, development, checks, atau pull request.
+- Jika `graphify-out/graph.json` dan `graphify-out/manifest.json` sudah ada setelah clone, gunakan ulang dan lewati extraction.
+- Jika salah satu file belum ada dan kamu ingin memakai repository graph, jalankan dari root project:
+
+```bash
+graphify . --update --code-only
+```
+
+- Shared graph output boleh di-commit; jangan commit metadata Graphify lokal.
+
 ## Development Workflow
 
 1. Fork repository lalu clone fork kamu

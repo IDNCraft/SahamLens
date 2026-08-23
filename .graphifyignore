@@ -1,0 +1,26 @@
+# Vite and TypeScript dependencies/build output
+
+node_modules/
+dist/
+dist-ssr/
+.vite/
+coverage/
+.eslintcache
+*.tsbuildinfo
+
+# Local release/tool state
+
+.vercel/
+.geeto/
+.codegraph
+
+# Graphify generated state
+
+graphify-out/
+
+# Local-only secrets and machine files
+
+.env
+.env.*
+!.env.example
+.DS_Store
