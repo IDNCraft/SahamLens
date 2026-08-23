@@ -26,6 +26,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "test": "bun test",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
