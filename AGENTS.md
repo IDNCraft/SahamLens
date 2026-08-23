@@ -1,5 +1,10 @@
 # AGENTS
 
+## JavaScript/TypeScript Tooling
+
+- Use Bun for all package installs, scripts, development servers, builds, tests, and one-off tools: `bun install`, `bun run <script>`, and `bunx <tool>`.
+- Do not use `npm`, `npx`, `yarn`, or `pnpm` in this project.
+
 ## Env Config
 
 Generated/modified env config → real local val in `.env` + safe placeholder in `.env.example`.

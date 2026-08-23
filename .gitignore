@@ -25,8 +25,10 @@ dist-ssr
 
 # Graphify cache / machine-local metadata (keep graph.json and manifest.json)
 graphify-out/cost.json
+graphify-out/*/cost.json
 graphify-out/cache/
 graphify-out/.graphify_root
+graphify-out/.graphify_python
 
 # Geeto state files
 .geeto
