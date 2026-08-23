@@ -124,10 +124,12 @@ export function AnalysisPanel({
         <span className="panel-kicker">Cara kerja skor</span>
         {scoringMethod === 'continuous' ? (
           <>
-            <code>Skor = jumlah(skor_kualitas x bobot) / jumlah(bobot)</code>
+            <code>
+              Skor = jumlah(skor_kategori x bobot_kategori_terisi) / jumlah(bobot_kategori_terisi)
+            </code>
             <p>
               Setiap metrik mendapat nilai 0 sampai 100 berdasarkan kualitas angkanya. Data kosong
-              dilewati.
+              dan kategori tanpa metrik terisi dilewati.
             </p>
           </>
         ) : (

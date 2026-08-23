@@ -40,7 +40,11 @@ export default [
             ecmaVersion: 'latest',
             sourceType: 'module',
             parser: tsParser,
-            parserOptions: { projectService: true },
+            parserOptions: {
+                projectService: {
+                    allowDefaultProject: ['tests/analysis.test.ts'],
+                },
+            },
         },
         plugins: { '@typescript-eslint': tsPlugin },
         rules: {

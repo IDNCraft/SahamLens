@@ -63,6 +63,9 @@ const formatValue = (value: number | null, unit: string): string => {
   return `${formatNumber(value)} ${unit}`
 }
 
+const averageScore = (scores: readonly number[]): number | null =>
+  scores.length > 0 ? scores.reduce((total, value) => total + value, 0) / scores.length : null
+
 const createRule = (config: RuleConfig): AnalysisRule => {
   if (config.value === null || config.value === undefined) {
     return {
@@ -557,8 +560,7 @@ export const buildAnalysis = (
         v < 0 ? 0 : v <= 10 ? 100 : v <= 20 ? 100 - (v - 10) * 5 : 10
       )
 
-      const valCatScore =
-        valScores.length > 0 ? valScores.reduce((a, b) => a + b, 0) / valScores.length : 50
+      const valCatScore = averageScore(valScores)
 
       // 2. Profitability (Weight: 15)
       const profScores: number[] = []
@@ -584,8 +586,7 @@ export const buildAnalysis = (
         v <= 0 ? 0 : v < 20 ? 40 + v * 2 : 100
       )
 
-      const profCatScore =
-        profScores.length > 0 ? profScores.reduce((a, b) => a + b, 0) / profScores.length : 50
+      const profCatScore = averageScore(profScores)
 
       // 3. Growth (Weight: 20)
       const growthScores: number[] = []
@@ -607,8 +608,7 @@ export const buildAnalysis = (
       addGrowthScore(growth.revenue_quarter_yoy_growth_percent)
       addGrowthScore(growth.net_income_quarter_yoy_growth_percent)
 
-      const growthCatScore =
-        growthScores.length > 0 ? growthScores.reduce((a, b) => a + b, 0) / growthScores.length : 50
+      const growthCatScore = averageScore(growthScores)
 
       // 4. Solvency (Weight: 15)
       const solvScores: number[] = []
@@ -641,8 +641,7 @@ export const buildAnalysis = (
         v <= 0 ? 0 : v < 1.5 ? 10 + v * 13.33 : v < 5.0 ? 30 + (v - 1.5) * 14.28 : 100
       )
 
-      const solvCatScore =
-        solvScores.length > 0 ? solvScores.reduce((a, b) => a + b, 0) / solvScores.length : 50
+      const solvCatScore = averageScore(solvScores)
 
       // 5. Cash Flow (Weight: 15)
       const cfScores: number[] = []
@@ -651,8 +650,7 @@ export const buildAnalysis = (
       if (cashFlow.free_cashflow_ttm_idr_billion !== null)
         cfScores.push(cashFlow.free_cashflow_ttm_idr_billion > 0 ? 100 : 10)
 
-      const cfCatScore =
-        cfScores.length > 0 ? cfScores.reduce((a, b) => a + b, 0) / cfScores.length : 50
+      const cfCatScore = averageScore(cfScores)
 
       // 6. Dividend (Weight: 10)
       const divScores: number[] = []
@@ -665,8 +663,7 @@ export const buildAnalysis = (
         divScores.push(po <= 0 ? 0 : po <= 70 ? 100 : po <= 100 ? 70 : 30)
       }
 
-      const divCatScore =
-        divScores.length > 0 ? divScores.reduce((a, b) => a + b, 0) / divScores.length : 0
+      const divCatScore = averageScore(divScores)
 
       // 7. Risk & Other (Weight: 5)
       const riskScores: number[] = []
@@ -686,8 +683,7 @@ export const buildAnalysis = (
         v >= 70 ? 100 : v >= 30 ? 60 : 20
       )
 
-      const riskCatScore =
-        riskScores.length > 0 ? riskScores.reduce((a, b) => a + b, 0) / riskScores.length : 50
+      const riskCatScore = averageScore(riskScores)
 
       const weights = [20, 15, 20, 15, 15, 10, 5]
       const categoryScores = [
@@ -704,7 +700,9 @@ export const buildAnalysis = (
       let totalCatWeight = 0
 
       for (let i = 0; i < weights.length; i++) {
-        weightedSum += categoryScores[i] * weights[i]
+        const categoryScore = categoryScores[i]
+        if (categoryScore === null) continue
+        weightedSum += categoryScore * weights[i]
         totalCatWeight += weights[i]
       }
 

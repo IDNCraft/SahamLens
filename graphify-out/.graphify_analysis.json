@@ -6,10 +6,6 @@
       "src_app_app",
       "src_app_countmetrics",
       "src_app_counttables",
-      "src_components_analysis_analysispanel",
-      "src_components_analysis_analysispanel_analysispanel",
-      "src_components_analysis_analysispanel_analysisreasonlist",
-      "src_components_analysis_analysispanel_analysisstatuslabel",
       "src_components_history_historyviews",
       "src_components_history_historyviews_chartpoint",
       "src_components_history_historyviews_comparisonpanel",
@@ -32,9 +28,7 @@
       "src_utils_history_isisodate",
       "src_utils_history_loadhistory",
       "src_utils_history_localdate",
-      "src_utils_history_max_history_snapshots",
       "src_utils_history_nullablenumber",
-      "src_utils_history_save_score_threshold",
       "src_utils_history_savehistorysnapshot",
       "src_utils_history_snapshotid",
       "src_utils_history_sorthistory",
@@ -53,7 +47,8 @@
       "src_utils_historyhelpers_localisodate",
       "src_utils_historyhelpers_readhistoryparams",
       "src_utils_historyhelpers_resolvehistorydate",
-      "src_utils_historyhelpers_weekdayindexes"
+      "src_utils_historyhelpers_weekdayindexes",
+      "src_utils_labeltranslator_translatesectionlabel"
     ],
     "1": [
       "src_utils_stockbittext",
@@ -92,12 +87,11 @@
       "src_utils_types_marketquotesnapshot",
       "src_utils_types_numbermap",
       "src_utils_types_parsedmetric",
-      "src_utils_types_parsedsection",
-      "src_utils_types_parsedtable",
+      "src_utils_types_parsedtablerow",
+      "src_utils_types_parseresult",
       "src_utils_types_priceperformanceperiod",
       "src_utils_types_shareholdercompositionrecord",
       "src_utils_types_shareholderrecord",
-      "src_utils_types_stockdata",
       "src_utils_types_subsidiaryrecord"
     ],
     "2": [
@@ -129,7 +123,6 @@
       "package_scripts_lint",
       "package_scripts_lint_fix",
       "package_scripts_lint_oxlint",
-      "package_scripts_prepush",
       "package_scripts_preview",
       "package_scripts_release",
       "package_scripts_release_alpha",
@@ -212,10 +205,40 @@
       "src_utils_labeltranslator_parseval",
       "src_utils_labeltranslator_section_labels",
       "src_utils_labeltranslator_translatemetriclabel",
-      "src_utils_labeltranslator_translatesectionlabel",
-      "src_utils_labeltranslator_translatetablelabel"
+      "src_utils_labeltranslator_translatetablelabel",
+      "src_utils_types_parsedsection",
+      "src_utils_types_parsedtable"
     ],
     "5": [
+      "src_components_analysis_analysispanel",
+      "src_components_analysis_analysispanel_analysispanel",
+      "src_components_analysis_analysispanel_analysisreasonlist",
+      "src_components_analysis_analysispanel_analysisstatuslabel",
+      "src_utils_analysis",
+      "src_utils_analysis_analysisrule",
+      "src_utils_analysis_analysisstatus",
+      "src_utils_analysis_averageperformance",
+      "src_utils_analysis_averagescore",
+      "src_utils_analysis_buildanalysis",
+      "src_utils_analysis_buildrules",
+      "src_utils_analysis_createrule",
+      "src_utils_analysis_evaluation",
+      "src_utils_analysis_formatnumber",
+      "src_utils_analysis_formatvalue",
+      "src_utils_analysis_horizonsignal",
+      "src_utils_analysis_numberformatter",
+      "src_utils_analysis_ruleconfig",
+      "src_utils_analysis_stockanalysis",
+      "src_utils_analysis_valuationsignal",
+      "src_utils_history_max_history_snapshots",
+      "src_utils_history_save_score_threshold",
+      "src_utils_types_stockdata",
+      "tests_analysis_test",
+      "tests_analysis_test_makestockdata",
+      "tests_analysis_test_positivedatawithoutdividend",
+      "tests_analysis_test_stockdataoverrides"
+    ],
+    "6": [
       "ref_dom",
       "ref_src",
       "ref_vite_client",
@@ -240,29 +263,6 @@
       "tsconfig_app_compileroptions_verbatimmodulesyntax",
       "tsconfig_app_include",
       "tsconfig_app_json_ref_es2023"
-    ],
-    "6": [
-      "src_utils_parser",
-      "src_utils_parser_cleanlines",
-      "src_utils_parser_dense_boundary_pattern",
-      "src_utils_parser_escaperegexp",
-      "src_utils_parser_expanddensetext",
-      "src_utils_parser_financial_row_labels",
-      "src_utils_parser_finishsection",
-      "src_utils_parser_isvalueline",
-      "src_utils_parser_metric_label_set",
-      "src_utils_parser_metric_labels",
-      "src_utils_parser_mutablesection",
-      "src_utils_parser_non_value_lines",
-      "src_utils_parser_parsedividendtable",
-      "src_utils_parser_parsefinancialtable",
-      "src_utils_parser_parseperformancetable",
-      "src_utils_parser_parsestocktext",
-      "src_utils_parser_performance_windows",
-      "src_utils_parser_section_titles",
-      "src_utils_parser_tableparse",
-      "src_utils_types_parsedtablerow",
-      "src_utils_types_parseresult"
     ],
     "7": [
       "oxlintrc",
@@ -309,21 +309,25 @@
       "tsconfig_node_json_ref_es2023"
     ],
     "9": [
-      "src_utils_analysis",
-      "src_utils_analysis_analysisrule",
-      "src_utils_analysis_analysisstatus",
-      "src_utils_analysis_averageperformance",
-      "src_utils_analysis_buildanalysis",
-      "src_utils_analysis_buildrules",
-      "src_utils_analysis_createrule",
-      "src_utils_analysis_evaluation",
-      "src_utils_analysis_formatnumber",
-      "src_utils_analysis_formatvalue",
-      "src_utils_analysis_horizonsignal",
-      "src_utils_analysis_numberformatter",
-      "src_utils_analysis_ruleconfig",
-      "src_utils_analysis_stockanalysis",
-      "src_utils_analysis_valuationsignal"
+      "src_utils_parser",
+      "src_utils_parser_cleanlines",
+      "src_utils_parser_dense_boundary_pattern",
+      "src_utils_parser_escaperegexp",
+      "src_utils_parser_expanddensetext",
+      "src_utils_parser_financial_row_labels",
+      "src_utils_parser_finishsection",
+      "src_utils_parser_isvalueline",
+      "src_utils_parser_metric_label_set",
+      "src_utils_parser_metric_labels",
+      "src_utils_parser_mutablesection",
+      "src_utils_parser_non_value_lines",
+      "src_utils_parser_parsedividendtable",
+      "src_utils_parser_parsefinancialtable",
+      "src_utils_parser_parseperformancetable",
+      "src_utils_parser_parsestocktext",
+      "src_utils_parser_performance_windows",
+      "src_utils_parser_section_titles",
+      "src_utils_parser_tableparse"
     ],
     "10": [
       "src_components_input_gettingstartedguide",
@@ -348,16 +352,16 @@
     ]
   },
   "cohesion": {
-    "0": 0.1081277213352685,
-    "1": 0.10963455149501661,
-    "2": 0.04878048780487805,
+    "0": 0.12145390070921985,
+    "1": 0.11033681765389082,
+    "2": 0.05,
     "3": 0.05405405405405406,
-    "4": 0.12258064516129032,
-    "5": 0.08333333333333333,
-    "6": 0.1619047619047619,
+    "4": 0.11088709677419355,
+    "5": 0.1111111111111111,
+    "6": 0.08333333333333333,
     "7": 0.1,
     "8": 0.1,
-    "9": 0.19047619047619047,
+    "9": 0.1871345029239766,
     "10": 0.6666666666666666,
     "11": 0.6666666666666666,
     "12": 1.0,
@@ -376,13 +380,13 @@
       "degree": 19
     },
     {
-      "id": "package_scripts",
-      "label": "scripts",
-      "degree": 19
-    },
-    {
       "id": "tsconfig_app_compileroptions",
       "label": "compilerOptions",
+      "degree": 18
+    },
+    {
+      "id": "package_scripts",
+      "label": "scripts",
       "degree": 18
     },
     {
@@ -391,13 +395,13 @@
       "degree": 15
     },
     {
-      "id": "src_components_stock_stockdataviews_datasection",
-      "label": "DataSection()",
-      "degree": 11
-    },
-    {
       "id": "src_utils_parser_parsestocktext",
       "label": "parseStockText()",
+      "degree": 12
+    },
+    {
+      "id": "src_components_stock_stockdataviews_datasection",
+      "label": "DataSection()",
       "degree": 11
     },
     {
@@ -440,11 +444,11 @@
       "why": "connects across different repos/directories"
     },
     {
-      "source": "App()",
-      "target": "buildAnalysis()",
+      "source": "DataSection()",
+      "target": "translateSectionLabel()",
       "source_files": [
-        "src/App.tsx",
-        "src/utils/analysis.ts"
+        "src/components/stock/StockDataViews.tsx",
+        "src/utils/labelTranslator.ts"
       ],
       "confidence": "EXTRACTED",
       "relation": "calls",
@@ -462,11 +466,11 @@
       "why": "inferred connection - not explicitly stated in source"
     },
     {
-      "source": "App()",
-      "target": "translateSectionLabel()",
+      "source": "cleanLines()",
+      "target": "normalizeStockbitLines()",
       "source_files": [
-        "src/App.tsx",
-        "src/utils/labelTranslator.ts"
+        "src/utils/parser.ts",
+        "src/utils/stockbitText.ts"
       ],
       "confidence": "EXTRACTED",
       "relation": "calls",
