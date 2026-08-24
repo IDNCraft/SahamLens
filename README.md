@@ -8,6 +8,7 @@
 <p align="center">
  <a href="#mulai-cepat">Mulai Cepat</a> ·
  <a href="#fitur">Fitur</a> ·
+ <a href="docs/privacy-and-snapshot-behavior.md">Privasi &amp; snapshot</a> ·
  <a href="#kontribusi">Kontribusi</a>
 </p>
 
@@ -22,7 +23,7 @@
  <img src="src/assets/hero.png" alt="SahamLens" width="180" />
 </p>
 
-SahamLens membaca teks snapshot saham yang kamu tempel dari Stockbit, lalu mengubahnya menjadi ringkasan data yang mudah dipindai. Pemrosesan berlangsung langsung di browser. Tidak ada koneksi langsung ke akun Stockbit, dan riwayat analisis disimpan secara lokal di perangkat.
+SahamLens membaca teks snapshot saham yang kamu tempel dari Stockbit, lalu mengubahnya menjadi ringkasan data yang mudah dipindai. Pemrosesan snapshot berlangsung langsung di browser. Tidak ada koneksi langsung ke akun Stockbit, dan riwayat analisis disimpan secara lokal di perangkat. Batas privasi, retensi, perilaku storage, dan format input dijelaskan di [Privasi, retensi, dan perilaku snapshot](docs/privacy-and-snapshot-behavior.md).
 
 ## Fitur
 
@@ -30,7 +31,7 @@ SahamLens membaca teks snapshot saham yang kamu tempel dari Stockbit, lalu mengu
 - **Data terstruktur** - Menyajikan hasil dalam kartu metrik dan tabel yang mudah dipindai.
 - **Skor berbasis aturan** - Menguji valuasi, profitabilitas, pertumbuhan, solvabilitas, arus kas, dan kualitas fundamental.
 - **Skor transparan** - Menampilkan metrik yang diuji, bobot, rumus, nilai, status, dan alasan setiap aturan.
-- **Riwayat lokal** - Menyimpan hingga 100 snapshot di browser untuk membandingkan skor, harga, pendapatan, laba, serta arus kas dari waktu ke waktu.
+- **Riwayat lokal** - Menyimpan hingga 100 snapshot di browser untuk membandingkan skor, harga, pendapatan, laba, serta arus kas dari waktu ke waktu. Snapshot yang disimpan juga mempertahankan teks mentah non-kosong agar dapat dibuka kembali.
 - **Input dari clipboard** - Memasukkan teks snapshot dari clipboard sebelum diproses.
 
 ## Mulai Cepat
@@ -70,6 +71,8 @@ Buka URL lokal yang ditampilkan Vite di terminal.
 4. Buka tab **Analisis saham** untuk meninjau skor, metrik, dan alasan setiap aturan.
 5. Simpan snapshot jika skor memenuhi ambang yang ditetapkan, lalu pantau perubahannya di **Riwayat analisis**.
 
+Untuk memahami apa yang tersimpan dan cara menangani input yang terbaca sebagian, lihat [Privasi, retensi, dan perilaku snapshot](docs/privacy-and-snapshot-behavior.md). Kontributor dapat memakai [contoh snapshot sintetis](docs/synthetic-snapshot.md); contoh itu seluruhnya fiktif dan tidak boleh diganti dengan data akun nyata.
+
 ## Arsitektur
 
 | Layer           | Teknologi / Peran                                               |
@@ -93,6 +96,15 @@ bun run lint
 # Buat production build
 bun run build
 
+# Periksa format tanpa mengubah file
+bun run format:check
+
+# Periksa tipe TypeScript
+bun run typecheck
+
+# Periksa whitespace/error pada diff
+git diff --check
+
 # Preview production build
 bun run preview
 ```
@@ -104,11 +116,14 @@ Kontribusi terbuka untuk parser, label metrik, aturan analisis, aksesibilitas, d
 Sebelum membuat pull request:
 
 ```bash
+bun run format:check
 bun run lint
+bun run typecheck
 bun run build
+git diff --check
 ```
 
-Jaga perubahan tetap fokus, sertakan contoh snapshot jika mengubah parser, dan jelaskan dampak perubahan aturan terhadap skor.
+Jaga perubahan tetap fokus, sertakan [contoh snapshot sintetis](docs/synthetic-snapshot.md) jika mengubah parser, dan jelaskan dampak perubahan aturan terhadap skor.
 
 ## Disclaimer
 

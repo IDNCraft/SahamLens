@@ -100,6 +100,13 @@ Gunakan [Conventional Commits](https://www.conventionalcommits.org/):
 - Jelaskan perubahan skor jika mengubah aturan analisis
 - Hindari mengubah data input asli secara diam-diam
 
+### Input dan privasi
+
+- Gunakan [contoh snapshot sintetis](docs/synthetic-snapshot.md) untuk fixture, dokumentasi, dan reproduksi yang aman.
+- Jangan commit snapshot Stockbit nyata, teks clipboard, data akun, atau isi `localStorage` ke repository, issue, log, screenshot, maupun pull request.
+- Parser menerima teks biasa dari snapshot **Key Stats** Stockbit. Ia dapat menormalkan line ending, whitespace, dan sebagian artefak teks hasil salin; HTML mentah, CSV, dan JSON bukan format input yang dijamin.
+- Pemrosesan snapshot berjalan di browser. Riwayat hanya ditulis setelah pengguna memilih **Simpan ke riwayat**; detail retensi, penghapusan, storage failure, dan partial parse ada di [dokumentasi behavior snapshot](docs/privacy-and-snapshot-behavior.md).
+
 ### Formatting
 
 Jalankan formatter sebelum membuat pull request:
@@ -111,9 +118,11 @@ bun run format
 ## Checks
 
 ```bash
-bun run lint
-bun run build
 bun run format:check
+bun run lint
+bun run typecheck
+bun run build
+git diff --check
 ```
 
 Jika mengubah parser atau aturan analisis, lakukan verifikasi manual melalui development server:
@@ -122,12 +131,14 @@ Jika mengubah parser atau aturan analisis, lakukan verifikasi manual melalui dev
 bun run dev
 ```
 
+Repository saat ini belum memiliki test file Bun atau validator link Markdown khusus. `bun run format:check` memeriksa format dokumentasi; periksa link relatif dan jalankan checks di atas sebelum commit.
+
 ## Pull Request Guidelines
 
 1. Satu pull request berisi satu fitur atau perbaikan utama
 2. Jelaskan masalah dan solusi secara singkat
 3. Sertakan screenshot jika perubahan memengaruhi UI
-4. Sertakan contoh input jika perubahan memengaruhi parser
+4. Sertakan contoh input sintetis jika perubahan memengaruhi parser
 5. Jelaskan dampak terhadap skor jika mengubah analysis rules
 6. Pastikan `bun run lint` dan `bun run build` berhasil
 7. Update dokumentasi jika behavior user-facing berubah
